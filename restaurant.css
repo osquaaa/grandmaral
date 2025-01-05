@@ -1,0 +1,58 @@
+/*.tab {*/
+/*    overflow: hidden;*/
+/*    background-color: #82ae503c;*/
+/*    border-radius: 10px;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    margin-top: 30px;*/
+/*}*/
+
+/* Style the buttons that are used to open the tab content */
+/*.tab button {*/
+/*    background-color: #ffffff00;*/
+/*    float: left;*/
+/*    border: none;*/
+/*    outline: none;*/
+/*    cursor: pointer;*/
+/*    padding: 14px 16px;*/
+/*    transition: 0.3s;*/
+/*    font-size: 20px;*/
+/*    letter-spacing: 1px;*/
+/*    color: #2B2B2B  ;*/
+/*    width: 100%;*/
+/*}*/
+
+/* Change background color of buttons on hover */
+/*.tab button:hover {*/
+/*    background-color: #d57c08d6;*/
+/*    color: #fff;*/
+/*}*/
+
+/* Create an active/current tablink class */
+/*.tab button.active {*/
+/*    background-color: #46c01a9b;*/
+/*}*/
+
+/* Style the tab content */
+/*.tabcontent {*/
+/*    display: none;*/
+/*    padding: 6px 12px;*/
+/*    border-top: none;*/
+/*}*/
+/*.tabcontent h3{*/
+/*    color: #2B2B2B;*/
+/*    text-align: center;*/
+/*    font-size: 30px;*/
+/*    padding-top: 20px;*/
+/*}*/
+
+/*.paris img{*/
+/*    max-width: 100%;*/
+/*    display: flex;*/
+/*    margin: 0 auto;*/
+/*}*/
+
+/*.paris img:not(:last-child){*/
+/*    margin-top: 50px;*/
+/*}*/

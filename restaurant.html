@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+       <link rel="icon" href="./favicon_io/favicon.ico" type="image/png">
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+<link rel="manifest" href="./favicon_io/site.webmanifest">
+
+        <link rel="stylesheet" href="restaurant.css">
+            <link rel="stylesheet" href="fonts.css">
+
+
+    <!-- <script src="//code.jivo.ru/widget/45EJEr5kQb" async></script> -->
+
+    <title>Абашевский Марал | Ресторан</title>
+        <style>
+
+        .Btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 5px;
+  }
+  .buttons-media{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+    }
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+  }
+  
+  .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #24a1de;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  .BG-whatsapp {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #00d757;
+    background: #00d757;
+    background: #00d757;
+    background: #00d757;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  .Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  .Btn:hover .BG-whatsapp {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  .Btn:hover .svgContainer {
+    border: 1px solid rgba(226, 226, 226, 0.466);
+    background-color: rgba(204, 204, 204, 0.466);
+    backdrop-filter: blur(4px);
+  }
+        .back-link a{
+    margin-top: 20px;
+    color: #277447;
+} 
+      .photos-content__image img{
+
+    border: 3px solid #38915c;
+}   
+              #navbar {
+
+background: #15803d;
+
+  position: fixed; /* Делаем меню фиксированным/прилипающим */
+  top: -70px; /* Ставим меню на 50px за пределами видимости */
+  max-width: 100%; /* Ширина на всю страницу */
+  transition: top 0.3s; /* Эффект выезжания вниз (и вверх) */
+  z-index: 1000;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+border-radius: 20px;
+    border:2px solid #065f46;
+}
+.navbar-center{
+display:flex;
+justify-content:center;
+}
+/* Стили ссылок меню */
+#navbar a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+
+}
+
+#navbar a:hover {
+  background-color:#c5f1c1;
+  color: green;
+    border-radius: 15px;
+}
+      .header__menu{
+    margin: 0px 0px 0px 100px;
+}
+.menu{
+    background-color: #e9ffe04e;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+        padding-top: 10px;
+
+    }   
+          @media(max-width: 1353px){
+                    .header__menu{
+    margin: 0px 0px 0px 50px;
+}
+          }
+                    @media(max-width: 1176px){
+                        #navbar {
+                                  display: none;
+                              }
+                    .menu{
+        background-color: #00000000;
+    }
+                    }
+          @media(max-width:1285px){
+    .number__header{
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+}
+              ::selection {
+  background: #4db051;
+  color: #deffdf;
+}
+@media(max-width: 420px){
+
+.galery-title{
+    font-size: 30px;
+}
+.photos-title{
+    font-size: 37px;
+}
+} 
+.logo-mini span{
+  background-color: #f6f6f655;
+  padding: 0px 12px;
+  border-radius: 8px 10px 8px ;
+  backdrop-filter: blur(30px);
+  font-size: 30px; 
+  position: relative;
+}
+@media(max-width:1176px){
+  .logo-mini{
+        font-size: 30px;
+        
+        font-weight: 800;
+        padding-bottom: 10px;
+    }
+}
+              .sidenav a {
+          text-align:center;
+              }
+
+/* Style the buttons that are used to open the tab content */
+.tab {
+    overflow: hidden;
+    background-color: #82ae503c;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    border: none;
+    margin-top: 50px;
+    border: 1px solid #277447;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color:#dbf0df;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #173d29;
+    width: 100%;
+      font-family: "Jura", sans-serif;
+      font-weight: 700;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #b9e1c4;
+
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #1f5d3a;
+    color: #f0f9f3;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+.tabcontent h3{
+    color: #2B2B2B;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 20px;
+}
+.paris{
+}
+.paris img{
+    max-width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.paris img:not(:last-child){
+    margin-top: 50px;
+}
+    .header-photo{
+        background-image: url(./img/header/bg-01.jpg);
+
+    }
+    .sidenav .closebtn {
+        position: absolute;
+        top: -1%;
+        font-size: 80px;
+        right: 0%;
+        left: unset;
+        margin-right: 8px;
+    }
+    
+    </style>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(97762984, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/97762984" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Chatra {literal} -->
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'bJ9pr6gS4jnC5D5J8';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+<link href="/snowFlakes/snow.min.css" rel="stylesheet">
+</head>
+<body>
+        <script src="/snowFlakes/Snow.js"></script>
+<script>
+	new Snow ();
+</script>
+    <div class="wrapper">
+                        <div class="navbar-center">
+        <div id="navbar">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__link">Главная</a>
+                        </li>
+                        
+                        <li class="menu__item">
+                            <a href="./rooms.html" class="menu__link">Номера</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a href="./galery.html" class="menu__link">Фото</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="./services.html" class="menu__link">Услуги</a>
+                      </li>
+                            <li class="menu__item">
+                                <a href="./entertainment.html" class="menu__link">Развлечения</a>
+                            </li>
+
+                        <li class="menu__item">
+                            <a href="./tovari.html" class="menu__link">Товары</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Ресторан</a>
+                        </li>
+
+
+
+                    </ul>
+</div>
+</div>
+        <header class="header header-photo">
+            <div class="header__container _container">
+                <a href="./index.html" class="header__logo logo-mini" style="position: relative;margin-top: 0px;font-size: 24px;font-weight: 600;color: #FFFEFE;text-decoration: inherit;font-family: Exo 2, sans-serif;"> 
+                  <span>АМК</span>
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__link">Главная</a>
+                        </li>
+                        
+                        <li class="menu__item">
+                            <a href="./rooms.html" class="menu__link">Номера</a>
+                        </li>
+
+                        <li class="menu__item">
+                            <a href="./galery.html" class="menu__link">Фото</a>
+                        </li>
+                        <li class="menu__item">
+                          <a href="./services.html" class="menu__link">Услуги</a>
+                      </li>
+                            <li class="menu__item">
+                                <a href="./entertainment.html" class="menu__link">Развлечения</a>
+                            </li>
+
+                        <li class="menu__item">
+                            <a href="./tovari.html" class="menu__link">Товары</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Ресторан</a>
+                        </li>
+                        <li class="menu__item">
+                        <div class="number__header number__header-mini">
+                            <div class="number__content number__content-mini">
+                            <a class="number__title number-title__mini">+7 (929) 766-00-42</a>
+
+                            <a href="tel:89297660042" class="number__text">Позвонить нам</a>
+
+                        </div>
+                        </div>
+                    </li>
+
+                        <div class="burger-menu">
+                            <div href="" class="burger-menu_button" onclick="openNav()">
+                              <span class="burger-menu_lines"></span>
+                            </a>
+
+
+                          </div>
+                    </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__main-block main-block">
+                <div class="page__main-block main-block">
+                    <div class="main-block__container _container">
+                        <div class="main-block__body block-body__mini">
+
+                            <!-- <h1 class="main-block__title">Фотогалерея</h1> -->
+
+                        </div>
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+            <section class="photos">
+                <div class="photos-content _container">
+                    <div class="photos-title">Ресторан</div>
+
+                    <div class="back-link"><a href="./index.html">Главная</a> / <span>Ресторан</span></div>
+
+                    <div class="tab">
+                        <button class="tablinks" onclick="openCity(event, 'London')" id="defaultOpen">Фото</button>
+                        <button class="tablinks" onclick="openCity(event, 'Paris')">Меню</button>
+                      </div>
+
+                    <!-- <img src="./img/foto/222_1.jpg.jpg" alt=""> -->
+                    <div id="London" class="tabcontent" style="">
+                        <h3>Фото</h3>
+                        <div class="photos-content__images">
+                        
+                            <div class="photos-content__image">
+    
+                                <img src="https://avatars.mds.yandex.net/get-altay/10804279/2a000001906d22f9b12b41e690795a6e451d/XXXL" onclick="openModal();currentSlide(1)" alt="">
+                                <img src="./rest-photo/DSC_6936.jpg" onclick="openModal();currentSlide(2)" alt="">
+    
+                                <img src="https://avatars.mds.yandex.net/get-altay/13897576/2a00000190d67d8a0fd167e69c76b7ab285f/XXXL" onclick="openModal();currentSlide(3)" alt="">
+    
+                                <img src="https://avatars.mds.yandex.net/get-altay/13192844/2a000001906d233be7aa36efc404d08ca2c1/XXXL" onclick="openModal();currentSlide(4)" alt="">
+    
+                                <img class="img-left" src="./rest-photo/DSC_6972.jpg" onclick="openModal();currentSlide(5)" alt="">
+    
+                                <img src="./rest-photo/DSC_6974.jpg"  onclick="openModal();currentSlide(6)" alt="">
+    
+    
+                                <img src="./rest-photo/DSC_6978.jpg"  onclick="openModal();currentSlide(7)" alt="">
+    
+                                <img src="https://avatars.mds.yandex.net/get-altay/11183932/2a000001906d232b8d0b6b57679c1cc8d39b/XXXL"  onclick="openModal();currentSlide(8)" alt="">
+    
+                                <img src="./rest-photo/DSC_7004.jpg"  onclick="openModal();currentSlide(9)" alt="">
+    
+                                <img src="https://avatars.mds.yandex.net/get-altay/11937221/2a00000190cac2a18970ff8d4f088a059110/XXXL"  onclick="openModal();currentSlide(10)" alt="">
+    
+                                <img src="./rest-photo/DSC_7007.jpg"  onclick="openModal();currentSlide(11)" alt="">
+    
+                                <img src="https://avatars.mds.yandex.net/get-altay/4699294/2a000001906d231bc09b543c7e40b23609e6/XXXL"  onclick="openModal();currentSlide(12)" alt="">
+    
+                                <img src="https://avatars.mds.yandex.net/get-altay/13220782/2a000001906d230bcedb16021e1d3d5cf9e0/XXXL"  onclick="openModal();currentSlide(13)" alt="">
+    
+                                <img src="./rest-photo/DSC_7028.jpg"  onclick="openModal();currentSlide(14)" alt="">
+    
+                                <img src="https://avatars.mds.yandex.net/get-altay/4699294/2a0000018ffc64b4c00ec317fc85d207e462/XXXL"  onclick="openModal();currentSlide(15)" alt="">
+    
+                                <img src="./rest-photo/DSC_7033.jpg"  onclick="openModal();currentSlide(16)" alt="">
+    
+    
+    
+    
+                                <!-- <img src="./img/outside/DSC_7264.jpg"  onclick="openModal();currentSlide(27)" alt="">
+    
+                                <img src="./img/outside/DSC_7266.jpg"  onclick="openModal();currentSlide(28)" alt="">
+    
+                                <img src="./img/outside/DSC_7264.jpg"  onclick="openModal();currentSlide(29)" alt="">
+    
+                                <img src="./img/outside/DSC_7266.jpg"  onclick="openModal();currentSlide(30)" alt=""> -->
+    
+    <!-- 
+                                <img src="./img/outside/DSC_7264.jpg"  onclick="openModal();currentSlide(27)" alt="">
+    
+                                <img src="./img/outside/DSC_7266.jpg"  onclick="openModal();currentSlide(28)" alt=""> -->
+                                
+    
+    
+                            </div>
+                        </div>
+                      </div>
+
+
+                      <div id="Paris" class="tabcontent paris">
+                        <h3>Меню</h3>
+
+                        <img src="./rest-photo/QR1.jpg" alt="">
+                        <img src="./rest-photo/QR2.jpg" alt="" >
+
+
+
+                      </div>
+                </div>
+            </section>
+
+            <section class="footer footer-mini">
+              <div class="footer-content _container">
+                  <div class="footer-contacts">
+                      <div class="footer-contacts__title">Наши контакты</div>
+                      <div class="footer-numbers">
+                      <span>Телефон</span>
+                      <a href="tel:89297660042" class="footer-contacts__number">+7 (929) 766-00-42</a>
+                  </div>
+                  <div class="footer-adress">
+                      <span>Адрес</span>
+                      <span class="adress">Абашевский мараловодческий комплекс, Пензенская область, Спасский район, село Липяги</span>
+                      <a href="https://yandex.ru/maps/-/CDvkuAYO" class="adress-link" target="_blank">Посмотреть на карте</a>
+                  </div>
+                  <a href="mailto:amk-spassk@yandex.ru" class="footer-email">amk-spassk@yandex.ru</a>
+              </div>
+
+                  <!-- <div class="footer-times">
+                      <div class="footer-times__title">График работы</div>
+                      <div class="first-time"><span>Пн-Пт </span> с 9:00 до 18:00</div>
+                      <div class="first-time"><span>Суббота</span> с 10:00 до 17:00</div>
+                      <div class="first-time"><span>Воскресенье</span> - выходной</div>
+
+                  </div> -->
+
+                  <div class="footer-social">
+                      <div class="footer-social__title">Наши соцсети</div>
+                      <div class="logo-social">
+                        <a href="https://vk.com/id865210970" class="social-img"><img src="./img/socseti/vk-svgrepo-com.svg" alt=""></a>
+                            <a href="https://t.me/+LJao2cvnadgyNzAy" class="social-img"><img src="./img/socseti/telegram-svgrepo-com.svg" alt=""></a>
+                          <a href="https://wa.me/79297660042" class="social-img"><img src="./img/socseti/whatsapp-128-svgrepo-com.svg" alt=""></a>
+                          <a href="tel:89297660042" class="footer-link">Позвонить нам</a>
+                          <a href="https://wa.me/79297660042" class="footer-link link-phone">Написать в WhatsApp</a>
+
+
+              </div>
+                  </div>
+                  
+              </div>
+
+              <div class="down-footer">
+                  <div class="down-footer_content _container">
+                    <div class="down-footer_span">© 2024 год База отдыха «Абашевский марал»</div>
+                  </div>
+              </div>
+          </section>
+            <div id="myModal" class="modal" style="z-index: 1001;">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 16</div>
+                    <img src="https://avatars.mds.yandex.net/get-altay/10804279/2a000001906d22f9b12b41e690795a6e451d/XXXL" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 16</div>
+                    <img src="./rest-photo/DSC_6936.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 16</div>
+                    <img src="https://avatars.mds.yandex.net/get-altay/13897576/2a00000190d67d8a0fd167e69c76b7ab285f/XXXL" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 16</div>
+                    <img src="https://avatars.mds.yandex.net/get-altay/13192844/2a000001906d233be7aa36efc404d08ca2c1/XXXL" style="width:100%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">5 / 16</div>
+                    <img src="./rest-photo/DSC_6972.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">6 / 16</div>
+                    <img src="./rest-photo/DSC_6974.jpg" style="width:100%">
+                  </div>
+
+
+
+                  <div class="mySlides">
+                    <div class="numbertext">7 / 16</div>
+                    <img src="./rest-photo/DSC_6978.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">8 / 16</div>
+                    <img src="https://avatars.mds.yandex.net/get-altay/11183932/2a000001906d232b8d0b6b57679c1cc8d39b/XXXL" style="width:100%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">9 / 16</div>
+                    <img src="./rest-photo/DSC_7004.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">10 / 16</div>
+                    <img src="https://avatars.mds.yandex.net/get-altay/11937221/2a00000190cac2a18970ff8d4f088a059110/XXXL" style="width:100%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">11 / 16</div>
+                    <img src="./rest-photo/DSC_7007.jpg" style="width:100%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">12 / 16</div>
+                    <img src="https://avatars.mds.yandex.net/get-altay/4699294/2a000001906d231bc09b543c7e40b23609e6/XXXL" style="width:100%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">13 / 16</div>
+                    <img src="https://avatars.mds.yandex.net/get-altay/13220782/2a000001906d230bcedb16021e1d3d5cf9e0/XXXL" style="width:100%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">14 / 16</div>
+                    <img src="./rest-photo/DSC_7028.jpg" style="width:100%">
+                  </div>
+              
+
+                  <div class="mySlides">
+                    <div class="numbertext">15 / 16</div>
+                    <img src="https://avatars.mds.yandex.net/get-altay/4699294/2a0000018ffc64b4c00ec317fc85d207e462/XXXL" style="width:100%">
+                  </div>
+
+                  <div class="mySlides">
+                    <div class="numbertext">16 / 16</div>
+                    <img src="./rest-photo/DSC_7033.jpg" style="width:100%">
+                  </div>
+
+
+
+
+
+                  <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">←</a>
+                  <a class="next" onclick="plusSlides(1)">→</a>
+              
+                  <!-- Caption text -->
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+                  <!-- Thumbnail image controls -->
+
+                </div>
+              </div>
+        </main>
+        
+<!--                <div class="buttons-media">-->
+<!--    <a href="https://t.me/+LJao2cvnadgyNzAy"><button class="Btn">-->
+<!--      <span class="svgContainer">-->
+<!--        <svg-->
+<!--          viewBox="0 0 496 512"-->
+<!--          height="2.3em"-->
+<!--          xmlns="http://www.w3.org/2000/svg"-->
+<!--          fill="white"-->
+<!--        >-->
+<!--          <path-->
+<!--            d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"-->
+<!--            fill="white"-->
+<!--          ></path>-->
+<!--        </svg>-->
+<!--      </span>-->
+<!--      <span class="BG"></span>-->
+<!--    </button>-->
+<!--</a>-->
+
+
+
+<!--</div>-->
+
+        <div class="btn-up btn-up_hide"></div>
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+    document.getElementById("navbar").style.top = "10px";
+  } else {
+    document.getElementById("navbar").style.top = "-70px";
+  }
+}
+</script>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="./index.html">Главная</a>
+            <a href="./rooms.html">Номера</a>
+            <a href="./galery.html">Фото</a>
+            <a href="./services.html">Услуги</a>
+
+            <a href="./entertainment.html">Развлечения</a>
+            <a href="./tovari.html">Товары</a>
+            <a href="#">Ресторан</a>
+    
+            <div class="sidenav-number__content">
+              <a href="tel:89297660042" class="sidenav-number">+7 (929) 766-00-42</a>
+              <a href="mailto:amk-spassk@yandex.ru" style="font-size: 20px;">amk-spassk@yandex.ru</a>
+              <!-- <span>Наш номер</span> -->
+          </div>
+      
+          <div class="sidenav-social__logos">
+                <a href="https://vk.com/id865210970"><img src="./img/socseti/vk-svgrepo-com.svg" alt=""></a>
+
+              <a href="https://wa.me/79297660042"><img src="./img/socseti/whatsapp-128-svgrepo-com.svg" alt=""></a>
+              <a href="https://t.me/+LJao2cvnadgyNzAy"><img src="./img/socseti/telegram-svgrepo-com.svg" alt=""></a>
+          </div>
+      
+    
+          </div>
+    </div>
+
+
+
+    <script>
+        // Open the Modal
+        function openModal() {
+          document.getElementById('myModal').style.display = "block";
+        }
+        
+        // Close the Modal
+        function closeModal() {
+          document.getElementById('myModal').style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+    <script src="slow-scroll.js"></script>
+    <script src="script.js"></script>
+        <script src="restaurant.js"></script>
+
+</body>
+</html>

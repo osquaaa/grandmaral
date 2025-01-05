@@ -1,0 +1,1289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jura:wght@300..700&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+
+
+       <link rel="icon" href="./favicon_io/favicon.ico" type="image/png">
+<link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+<link rel="manifest" href="./favicon_io/site.webmanifest">
+        <link rel="stylesheet" href="style.css">
+
+        <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+      
+      <style>
+.Btn {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-bottom: 5px;
+  }
+  .buttons-media{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+    }
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    backdrop-filter: blur(0px);
+    letter-spacing: 0.8px;
+    border-radius: 10px;
+    transition: all 0.3s;
+
+  }
+  
+  .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #24a1de;
+    z-index: -1;
+    border-radius: 10px;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  .BG-whatsapp {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #00d757;
+    background: #00d757;
+    background: #00d757;
+    background: #00d757;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all 0.3s;
+  }
+  .Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  .Btn:hover .BG-whatsapp {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  .Btn:hover .svgContainer {
+    border: 1px solid rgba(226, 226, 226, 0.466);
+    background-color: rgba(204, 204, 204, 0.466);
+    backdrop-filter: blur(4px);
+  }
+  
+          .galery-photos img {
+        display: inline-block;
+        vertical-align: top;
+        width: 270px;
+        height:350px;
+        background: rgb(239, 239, 239);
+        border-radius: 30px;
+    
+        transition: 0.5s;
+        object-fit: cover;
+        border: 2px solid #3b6844;
+    }
+      
+      .activies-uslugi{
+    margin-top: 100px;
+    padding-bottom: 80px;
+    background-color: #78b082;
+}
+
+      
+      .main-block__button_white{
+              border-radius: 30px;
+    color: #257030;
+    background:#e1f7e3;
+    transition:all 0.3s ease 0s;
+    font-weight: 500;
+    font-size:17px;
+    
+}
+.main-block__button_white:hover{
+    background-color: #60c86f;
+    color:#257030;
+}
+
+      
+      
+      
+      .main-block__button_orange{
+    border-radius: 30px;
+    padding: 23px 30px;
+    background: #2b8e39;
+    color: #e1f7e3;
+    transition:all 0.3s ease 0s;
+    font-weight: 500;
+    font-size: 18px;
+}
+.main-block__button_orange:hover{
+    background-color: #22592b;
+    color: #e1f7e3;
+}
+      
+      .like-title{
+    background-color: #f0fdf2;
+    border-radius: 30px;
+    padding: 15px;
+    color: #135422;
+    font-size: 20px;
+    text-align: center;
+}
+
+      
+    .like-sub{
+
+        font-size: 20px;
+        font-weight: 700;
+        background-color: #1c4b1e;
+        margin-top: 20px;
+        color: #dbfde1;
+        text-decoration: none;
+        padding: 20px ;
+        border-radius: 20px 10px;
+        transition: 0.3s;
+    }
+    .like-sub:hover{
+        background-color: #baf8c6;
+        color: #11972c;
+    }
+
+
+              #navbar {
+
+background: #15803d;
+
+  position: fixed; /* Делаем меню фиксированным/прилипающим */
+  top: -70px; /* Ставим меню на 50px за пределами видимости */
+  max-width: 100%; /* Ширина на всю страницу */
+  transition: top 0.3s; /* Эффект выезжания вниз (и вверх) */
+  z-index: 1000;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+border-radius: 20px;
+    border:2px solid #065f46;
+}
+.navbar-center{
+display:flex;
+justify-content:center;
+}
+/* Стили ссылок меню */
+#navbar a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+
+}
+
+#navbar a:hover {
+  background-color:#c5f1c1;
+  color: green;
+    border-radius: 15px;
+}
+      .header__menu{
+    margin: 0px 0px 0px 100px;
+}
+.menu{
+    background-color: #e9ffe04e;
+    border-radius: 20px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+        padding-top: 10px;
+
+    }   
+          @media(max-width: 1353px){
+                    .header__menu{
+    margin: 0px 0px 0px 50px;
+}
+          }
+                    @media(max-width: 1176px){
+                              #navbar {
+                                  display: none;
+                              }
+                            .menu{
+        background-color: #00000000;
+    }
+                    }
+                              @media(max-width:1285px){
+    .number__header{
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+}
+
+            .span-about{
+        background-color: #94e194;
+        padding: 10px 15px;
+        border-radius: 10px 10px 10px 10px;
+        color: #268726;
+      }
+              .activies-title__otziv{
+            margin-top: 20px;
+            font-size:40px;
+        }
+        .otziv-button{
+            background-color: #549360;
+            color: #e6f2e8;
+            border-radius: 10px;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 18px;
+            transition: 0.1s ease-in-out;
+        }
+        .otziv-button:hover{
+            background-color: #78b082;
+            color:#e6f2e8;
+        }
+      @media(max-width:992px){
+
+    .galery-title{
+        text-align: center;
+        font-size: 50px;
+    }
+}
+@media(max-width: 468px){
+
+    .galery-title{
+        font-size: 40px;
+    }
+}
+        @media(max-width: 366px){
+    
+        .galery-title{
+            font-size: 35px;
+        }
+        }
+      .activies-beauty{
+    padding-bottom: 80px;
+    background: #cde5d2;
+
+}
+      .about{
+background:#257030;
+      }
+      .white-about{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #dcfce7;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+      .span-white__logo{
+
+    transform: rotate(-90deg);
+    font-size: 140px;
+    font-weight: 800;
+    color: #356a273b;
+}
+      ::selection {
+  background: #4db051;
+  color: #deffdf;
+}
+        .activies-more, .galery-more, .services_button{
+            background-color:#c4eeca;
+            color: #3aad4a;
+            border-radius: 15px;
+            padding: 10px 25px;
+            border: 1px solid #3aad4a;
+        }
+      .main-block__image img{
+    opacity: 0.6;
+    background: center center no-repeat;;
+}
+    .sidenav .closebtn {
+        position: absolute;
+        top: -1%;
+        font-size: 80px;
+        right: 0%;
+        left: unset;
+        margin-right: 8px;
+
+    }
+    
+      .sidenav a {
+          text-align:center;
+
+      }
+          .swiper {
+            width: 100%;
+            height: 100%;
+          }
+      
+          .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+      
+          .swiper-slide img {
+            height: 400px;
+            width: 70%;
+            object-fit: cover;
+            background-repeat: no-repeat;
+            border-radius: 30px;
+
+          }
+          
+          .main-block__body{
+    padding: 240px 0px 191px 0px;
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+}
+@media (max-width:992px){
+    .main-block__body{
+        padding: 240px 0px 191px 0px;
+    }
+}
+
+.header__logo img{
+    height:100px;
+    filter: invert(1);
+
+}
+
+@media (max-width:479px){
+    .main-block__body{
+        padding: 200px 0px 210px 0px;
+    }
+    
+    .header__logo{
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #FFFEFE;
+    text-decoration: inherit;
+}
+.header__logo img{
+    margin-top: 10px;
+    height: 100px;
+    filter: invert(1);
+}
+}
+.services__container{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.services-card {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 270px;
+    height:400px;
+    background: rgb(239, 239, 239);
+    border-radius: 30px;
+    -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.17);
+-moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.17);
+box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.17);
+transition: 0.3s;
+} 
+.services-card:hover{
+    -webkit-box-shadow: 1px 24px 24px 1px rgba(0, 0, 0, 0.17);
+-moz-box-shadow: 1px 24px 24px 1px rgba(0, 0, 0, 0.17);
+box-shadow: 1px 24px 24px 1px rgba(0, 0, 0, 0.17);
+
+}
+.services-card img{
+    border: 3px solid #2b8e39;
+
+    height: 100%;
+    border-radius: 30px;
+
+
+}
+.services-card span{
+
+    position: absolute;
+    display: none;
+
+}
+.services-card span{
+    display: flex;
+    top: 0%;
+background: #2b8e39;
+
+    padding: 15px;
+    border-radius: 30px 30px 30px 0px;
+    z-index: 100;
+    backdrop-filter: blur(2px);
+    color: #e1f7e3;
+
+}
+@media(max-width: 1180px){
+    .white-about{
+        width: 15%;
+    }
+}
+@media(max-width: 850px){
+    .white-about{
+
+    }
+    .about-content__title{
+        text-align: center;
+    }
+    .about-card{
+        border-radius: 30px;
+        background-color: #fff;
+        
+        height: 500px;
+
+    }
+}
+@media(max-width: 838px){
+    .white-about{
+        display: none;
+    }
+}
+        </style>
+    <title>Абашевский Марал | Пантовые ванны, база отдыха</title>
+
+        <!-- <script src="//code.jivo.ru/widget/45EJEr5kQb" async></script> -->
+<!-- Yandex.Metrika counter -->
+
+<!-- /Yandex.Metrika counter -->
+
+
+
+<!-- Chatra {literal} -->
+<script>
+    (function(d, w, c) {
+        w.ChatraID = 'bJ9pr6gS4jnC5D5J8';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<!-- /Chatra {/literal} -->
+<link href="/snowFlakes/snow.min.css" rel="stylesheet">
+</head>
+<body>
+    <script src="/snowFlakes/Snow.js"></script>
+<script>
+	new Snow ();
+</script>
+    <div class="wrapper">
+        
+        <div class="navbar-center">
+        <div id="navbar">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Главная</a>
+                        </li>
+                        
+                        <li class="menu__item">
+                            <a href="./rooms.html" class="menu__link">Номера</a>
+                        </li>
+                        <!-- <div class="dropdown-content">
+                            <a href="#">Люкс</a>
+                            <a href="#">Комфорт</a>
+                            <a href="#">Эконом</a>
+                        </div> -->
+                        <li class="menu__item">
+                            <a href="./galery.html" class="menu__link">Фото</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./services.html" class="menu__link">Услуги</a>
+                        </li>
+                            <li class="menu__item">
+                                <a href="./entertainment.html" class="menu__link ">Развлечения</a>
+                            </li>
+
+                        <li class="menu__item">
+                            <a href="./tovari.html" class="menu__link">Товары</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./restaurant.html" class="menu__link">Ресторан</a>
+                        </li>   
+
+
+
+                    </ul>
+</div>
+</div>
+        <header class="header">
+            <div class="header__container _container">
+                <a href="" class="header__logo"> 
+                    <img src="./img/foto/logomaral-Photoroom.png" alt="">
+                </a>    
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="" class="menu__link">Главная</a>
+                        </li>
+                        
+                        <li class="menu__item">
+                            <a href="./rooms.html" class="menu__link">Номера</a>
+                        </li>
+                        <!-- <div class="dropdown-content">
+                            <a href="#">Люкс</a>
+                            <a href="#">Комфорт</a>
+                            <a href="#">Эконом</a>
+                        </div> -->
+                        <li class="menu__item">
+                            <a href="./galery.html" class="menu__link">Фото</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./services.html" class="menu__link">Услуги</a>
+                        </li>
+                            <li class="menu__item">
+                                <a href="./entertainment.html" class="menu__link ">Развлечения</a>
+                            </li>
+
+                        <li class="menu__item">
+                            <a href="./tovari.html" class="menu__link">Товары</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./restaurant.html" class="menu__link">Ресторан</a>
+                        </li>   
+                        <li class="menu__item">
+                        <div class="number__header">
+                            <div class="number__content">
+                            <a class="number__title number-title__main">+7 (929) 766-00-42</a>
+
+                            <a href="tel:89297660042" class="number__text">Позвонить нам</a>
+                        </div>
+                        </div>
+                    </li>
+
+                        <div class="burger-menu">
+                            <div href="" class="burger-menu_button" onclick="openNav()">
+                              <span class="burger-menu_lines"></span>
+                            </a>
+
+
+                          </div>
+                    </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__main-block main-block">
+                <div class="page__main-block main-block">
+                    <div class="main-block__container _container">
+                        <div class="main-block__body">
+                            <h1 class="main-block__title">Вдали от городской суеты</h1>
+                            <div class="main-block__text">
+                                Отдых для всей семьи
+                            </div>
+                            <div class="main-block__buttons">
+                                <a href="tel:89297660042" class="main-block__button main-block__button_orange">Позвонить нам</a>
+                                <a href="https://wa.me/79297660042" class="main-block__button main-block__button_white">Написать в WhatsApp</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-block__image">
+                        <img src="./img/header/bg-01.jpg" alt="cover">
+                    </div>
+                </div>
+                <section class="page__services services">
+                    <div class="services__container _container">
+                        <div class="header-block">
+                        <h2 class="header-block__title">Наши номера</h2>
+                        <a href="./rooms.html" class="services_button ">Смотреть еще</a>
+                    </div>
+                        <div class="services__body">
+                                    <div class="services-cards">
+                                                                     <div class="services-card">
+                                    <span>Номер "Комфорт"</span>
+                                    <a href="./rooms.html" class="services-more_sub ">Подробнее</a>
+
+                                    <img src="https://avatars.mds.yandex.net/get-sprav-products/10118156/2a000001906d4711577af19164303a5980f6/orig" alt="" style="object-fit: cover; width: 300px;">
+                                
+                                </div>
+                                        
+                                <div class="services-card">
+                                    <span>Номер "ЛЮКС"</span>
+                                    <a href="./rooms.html" class="services-more_sub ">Подробнее</a>
+
+                                    <img src="https://avatars.mds.yandex.net/get-sprav-products/8331772/2a000001906d44bc98c5eaf892d08f308c4e/orig" alt="" style="object-fit: cover; width: 300px;">
+
+                                </div>
+
+   
+                                <div class="services-card">
+                                    <span>Гостевой дом</span>
+                                    <a href="./rooms.html" class="services-more_sub ">Подробнее</a>
+
+                                    <img src="https://avatars.mds.yandex.net/get-sprav-products/13488316/2a000001906d85d4cfef4ae7db1269e072df/orig" alt="" style="object-fit: cover; width: 300px;">
+
+                                </div>
+
+
+
+                                    </div>
+                            <!-- <div class="services__column">
+                                <div class="services__item item-service">
+                                    
+                                    <div class="item-service__icon">
+                                        <img src="img/foto/111_1.jpg.jpg" alt="">
+                                        <img class="item-service__phone" src="img/foto/icons8-телефон.svg" alt="">
+
+                                    </div>
+                                    <h3 class="item-service__title">
+                                        Номер 1
+                                     </h3>
+
+                                </div>
+                            </div>
+                            <div class="services__column">
+                                <div class="services__item item-service">
+                                    <div class="item-service__icon">
+                                        <img src="img/foto/222_1.jpg.jpg" alt="">
+                                        <img class="item-service__phone" src="img/foto/icons8-телефон.svg" alt="">
+                                    </div>
+                                    <h3 class="item-service__title">
+                                        Номер 2
+                                    </h3>
+
+                                </div>
+                            </div>
+                            <div class="services__column">
+                                <div class="services__item item-service item-service_green">
+                                    <div class="item-service__icon">
+                                        <img src="img/foto/333_1.jpg.jpg" alt="">
+                                        <img class="item-service__phone" src="img/foto/icons8-телефон.svg" alt="">
+                                    </div>
+                                    <h3 class="item-service__title">
+                                        Номер 3
+                                    </h3>
+
+                                </div>
+                            </div> -->
+
+
+                        </div>
+                    </div>
+                </section>
+                
+                <!--<section class="video__tour tour">-->
+                <!--    <div class="video__tour-content _container">-->
+                <!--        <div class="video__tour-title">Видеотур</div>-->
+
+                <!--        <div class="card-content">-->
+                        <!-- <iframe class="iframe-tour" src="https://www.youtube.com/embed/8guKSaCsJlk" title="Видеотур липяги" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+                <!--        <div class="iframe-tour">В данный момент видеотур недоступен...</div>-->
+                <!--        <div class="video__tour-card">-->
+                <!--            <div class="video__tour-card_content">-->
+                <!--            <div class="video__card-title">О видеотуре</div>-->
+                <!--            <div class="video__card-info">В данном видеотуре наш гид расскажет все про нашу базу отдыха. В видео будет затронута тема развлечений, кухни, отдыха и тд.</div>-->
+                <!--        </div>-->
+                <!--        </div>-->
+                <!--    </div>-->
+                <!--    </div>-->
+                <!--</section>-->
+
+                <section class="about" style="margin-top: 100px">
+                    <div class="white-about">
+                        <div class="span-white__logo">АМК</div>
+                    </div>
+                    <div class="about-content _container">
+                        
+                        <div class="about-content__title">
+                            <span class="about-content__subtitle1 ">Коротко</span>
+                            <span class="about-content__subtitle2">О нас</span>
+                        </div>
+                        <div class="adventages-list">
+                            <div class="numbers"><span class="numbers-title">1. </span><br><div class="span-about">Пантовые ванны и другие услуги</div></div>
+                            <div class="numbers"><span class="numbers-title">2. </span><br><div class="span-about">Доступные и комфортные номера</div></div>
+                            <div class="numbers"><span class="numbers-title">3. </span><br><div class="span-about">Вкусная кухня, созданная шеф-поваром</div></div>
+                            <div class="numbers"><span class="numbers-title">4. </span><br><div class="span-about">WI-FI на всей территории базы</div></div>
+                            <div class="numbers"><span class="numbers-title">5. </span><br><div class="span-about">Множество развлечений и занятий</div></div>
+                            <div class="numbers"><span class="numbers-title">6. </span><br><div class="span-about">Мини-зоопарк</div></div>
+                            <div class="numbers"><span class="numbers-title">7. </span><br><div class="span-about">Детский клуб</div></div>
+                            <div class="numbers"><span class="numbers-title">8. </span><br><div class="span-about">Охраняемые парковки</div></div>
+
+
+
+
+
+                        </div>
+
+                        <div class="doyoulike">
+                            <span class="like-title">Хотите посетить нашу базу отдыха?</span>
+                            <a href="tel:89297660042" class="like-sub">Позвонить нам</a>
+                            <a href="https://wa.me/79297660042" class="like-sub">Написать в WhatsApp</a>
+
+                        </div>
+                        <!-- <div class="about-card">
+                        </div> -->
+                    </div>
+                </section>
+
+                <section class="activies">
+                    <div class="activies-content _container">
+                        <div class="activies-title__content">
+                        <div class="activies-title">Развлечения</div>
+                        <a href="./entertainment.html" class="activies-more">Смотреть еще</a>
+                    </div>
+                            <div class="activies-cards">
+                                
+                        <div class="activies-card mipred">
+                            <div class="activies-card__content">
+                                <div class="activies-card__title mipred-title">Спортивная рыбалка</div>
+                                <div class="activies-card__img mipred-img">
+                                    <img src="https://avatars.mds.yandex.net/get-altay/10879408/2a00000190d6799ed6f4b4cab44d186754d1/XXXL" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activies-card mipred">
+                            <div class="activies-card__content">
+                                <div class="activies-card__title mipred-title">Прогулки по природе</div>
+                                <div class="activies-card__img mipred-img">
+                                    <img src="https://avatars.mds.yandex.net/get-altay/13287730/2a00000191f6672755854226ebf29ed5dd61/XXXL" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activies-card mipred">
+                            <div class="activies-card__content">
+                                <div class="activies-card__title mipred-title">Бассейн</div>
+                                <div class="activies-card__img mipred-img">
+                                    <img src="https://avatars.mds.yandex.net/get-altay/13237301/2a0000018febc08f47e9911a21a8373f9b6a/XXXL" alt="Фото бассейн">
+                                </div>
+                            </div>  
+                        </div>
+                        <div class="activies-card mipred">
+                            <div class="activies-card__content">
+                            <div class="activies-card__title mipred-title">Джакузи</div>
+                            <div class="activies-card__img mipred-img">
+                                <img src="https://avatars.mds.yandex.net/get-altay/6545454/2a000001906cf746f47222fb53ac958ed53d/XXXL" alt="Фото джакузи">
+                            </div>
+                        </div>
+                        </div>
+                        
+                     </div>
+                    </div>
+                </section>
+
+                <section class="activies activies-uslugi">
+                    <div class="activies-content _container">
+                        <div class="activies-title__content">
+                        <div class="activies-title" style="color: #e6f2e8;">Услуги</div>
+                        <a href="./services.html" class="activies-more">Смотреть еще</a>
+                    </div>
+                            <div class="activies-cards">
+                        <div class="activies-card">
+                            <div class="activies-card__content">
+                            <div class="activies-card__title">Ванна пантовая <br>"Сила марала"</div>
+                            <div class="activies-card__img">
+                                <img src="https://avatars.mds.yandex.net/get-altay/10878699/2a000001936e9e1f79e8af0ab8ddb7dfe0fa/XXXL" alt="Сила марала">
+                            </div>
+<a href="../services.html" class="card-link__more">Подробнее</a>
+                        </div>
+                        </div>
+                        <div class="activies-card">
+                            <div class="activies-card__content">
+                                <div class="activies-card__title">Ванна пантовая <br>"Код здоровья"</div>
+                                <div class="activies-card__img">
+                                    <img src="https://avatars.mds.yandex.net/get-sprav-products/13488316/2a000001906d9163018c6c3b38896fb0632d/orig" alt="Код здоровья">
+                                </div>
+<a href="../services.html" class="card-link__more">Подробнее</a>
+
+                            </div>
+                        </div>
+                        <div class="activies-card">
+                            <div class="activies-card__content">
+                                <div class="activies-card__title">Ванна пантовая <br>"Эликсир марала"</div>
+                                <div class="activies-card__img">
+                                    <img src="https://avatars.mds.yandex.net/get-altay/7883089/2a000001906ce508d0661f2ce37b68a90887/XXXL" alt="Эликсир марала">
+                                </div>
+<a href="../services.html" class="card-link__more">Подробнее</a>
+
+                            </div>
+                        </div>
+                        <div class="activies-card">
+                            <div class="activies-card__content">
+                                <div class="activies-card__title">Пантовое<br> обертывание</div>
+                                <div class="activies-card__img">
+                                    <img src="https://avatars.mds.yandex.net/get-altay/14396200/2a000001936e9e192ad2f8771c75b94da755/XXXL" alt="Пантовое обертывание">
+                                </div>
+<a href="../services.html" class="card-link__more">Подробнее</a>
+
+                            </div>  
+                        </div>
+
+                        
+                     </div>
+                    </div>
+                </section>
+
+
+           <section class="activies activies-tovari" style="background-color: #fff; padding-bottom: 60px;">
+                    <div class="activies-content _container">
+                        <div class="activies-title__content">
+                        <div class="activies-title ">Товары</div>
+                        <a href="./tovari.html" class="activies-more">Смотреть еще</a>
+                    </div>
+                            <div class="activies-cards">
+                        <div class="activies-card activies-card-tovari" style="background-color: #14532d;">
+                            <div class="activies-card__content">
+                            <div class="activies-card__img tovari-main">
+                                <img src="https://avatars.mds.yandex.net/get-altay/13609869/2a00000193102a926ee611c2102679cbc6b1/XXXL" alt="">
+                            </div>
+    <a href="../tovari.html" class="card-link__more">Подробнее</a>
+                        </div>
+                        </div>
+                        <div class="activies-card activies-card-tovari" style="background-color: #14532d;">
+                            <div class="activies-card__content">
+                                <div class="activies-card__img tovari-main">
+                                    <img src="https://avatars.mds.yandex.net/get-altay/14091921/2a00000193102a98a24ce706f6ba2b54e653/XXXL" alt="">
+                                </div>
+<a href="../tovari.html" class="card-link__more">Подробнее</a>
+
+                            </div>
+                        </div>
+                        <div class="activies-card activies-card-tovari" style="background-color: #14532d;">
+                            <div class="activies-card__content">
+                                <div class="activies-card__img tovari-main">
+                                    <img src="https://avatars.mds.yandex.net/get-altay/14209766/2a00000193102a847bbf09716c87b2084e97/XXXL" alt="">
+                                </div>
+<a href="../tovari.html" class="card-link__more">Подробнее</a>
+
+                            </div>
+                        </div>
+                        <div class="activies-card activies-card-tovari" style="background-color: #14532d;">
+                            <div class="activies-card__content">
+                                <div class="activies-card__img tovari-main">
+                                    <img src="https://avatars.mds.yandex.net/get-altay/13754922/2a00000193102a7721f6147bc9add043ab1f/XXXL" alt="">
+                                </div>
+<a href="../tovari.html" class="card-link__more">Подробнее</a>
+
+                            </div>  
+                        </div>
+
+                        
+                     </div>
+                    </div>
+                </section>
+                
+                
+                                <section class="activies activies-child" style='background-color: #e6f2e8; padding-bottom: 100px;'>
+                    <div class="activies-content _container">
+                        <div class="activies-title__content">
+                        <div class="activies-title" >Охраняемые парковки</div>
+                        <div class="activies-subtitle">Ваше авто будет в безопазности</div>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper" >
+                          <div class="swiper-slide"><img src="https://avatars.mds.yandex.net/get-altay/9830718/2a00000190c9d2f16bd4948e331436b593ce/XXXL" alt=""></div>
+                          <div class="swiper-slide"><img src="https://avatars.mds.yandex.net/get-altay/13267750/2a00000190bbc843f316241df1f61033e407/XXXL" alt=""></div>
+                          <div class="swiper-slide"><img src="https://avatars.mds.yandex.net/get-altay/13192844/2a00000190bbc811e007ad6487cb5b6edc57/XXXL" alt=""></div>
+
+
+
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>   
+                    </div>
+                </section>
+
+
+                <!--<section class="activies activies-child">-->
+                <!--    <div class="activies-content _container">-->
+                <!--        <div class="activies-title__content">-->
+                <!--        <div class="activies-title ">Детский клуб</div>-->
+                <!--        <div class="activies-subtitle">Все для ваших детей</div>-->
+                <!--    </div>-->
+                <!--    <div class="swiper mySwiper">-->
+                <!--        <div class="swiper-wrapper">-->
+                <!--          <div class="swiper-slide"><img src="./childish/DSC_7151.jpg" alt="Фото 1"></div>-->
+                <!--          <div class="swiper-slide"><img src="./childish/DSC_7156.jpg" alt="Фото 2"></div>-->
+                <!--          <div class="swiper-slide"><img src="./childish/DSC_7157.jpg" alt="Фото 3"></div>-->
+                <!--          <div class="swiper-slide"><img src="./childish/DSC_7154.jpg" alt="Фото 4"></div>-->
+
+                <!--        </div>-->
+                <!--        <div class="swiper-button-next"></div>-->
+                <!--        <div class="swiper-button-prev"></div>-->
+                <!--      </div>   -->
+                <!--    </div>-->
+                <!--</section>-->
+
+                <section class="galery" style="background-color: #78b082;">
+                    <div class="galery-content _container">
+                        <div class="header-block" style='display: flex; flex-direction: column; margin-bottom: 57px;'>
+                        <div class="galery-title" style=" color: #e6f2e8; ">Фотогалерея</div>
+                        <a href="./galery.html" class="galery-more ">Смотреть еще</a>
+                    </div>
+
+                        <div class="galery-photos">
+                            <div class="row">
+
+
+                            <!-- <img src="./img/foto/111_1.jpg.jpg" alt="">
+                            <img src="./img/foto/111_1.jpg.jpg" alt="">
+                            <img src="./img/foto/111_1.jpg.jpg" alt="">
+                            <img src="./img/foto/111_1.jpg.jpg" alt="">
+                            <img src="./img/foto/111_1.jpg.jpg" alt=""> -->
+                                <img src="https://avatars.mds.yandex.net/get-altay/14215987/2a00000191d70a6884dc4ef365b3849b950e/XXXL" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="outside">
+                                
+                                <img src="https://avatars.mds.yandex.net/get-altay/7883089/2a000001901351a36c6823399c30779aa703/XXXL" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                                <img src="https://avatars.mds.yandex.net/get-altay/13793720/2a00000192dee45edfdca606cf3ca9bfc54d/XXXL" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                                <img src="https://avatars.mds.yandex.net/get-altay/12814440/2a000001906ce257cdbdbf819a4ca3eee3ca/XXXL" onclick="openModal();currentSlide(4)" class="hover-shadow">
+
+                        </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <section class="activies activies-beauty">
+                    <div class="activies-content _container">
+                        <div class="activies-title__content">
+                        <div class="activies-title">Красота и здоровье</div>
+                        <div class="activies-subtitle">У нас есть, что предложить для вашей красоты и здоровья</div>
+                    </div>
+                            <div class="activies-cards activies-cards__beauty">
+                        <div class="activies-card">
+                            <div class="activies-card__content">
+                            <div class="activies-card__title" style='background-color: #166534;'>Сауна</div>
+
+                        </div>
+                        </div>
+                        <div class="activies-card activies-card__beauty">
+                            <div class="activies-card__content">
+                                <div class="activies-card__title " style='background-color:#166534;'>Хаммам</div>
+
+
+                            </div>
+                        </div>
+                        <div class="activies-card">
+                            <div class="activies-card__content">
+                                <div class="activies-card__title" style='background-color: #166534;'>Спа</div>
+
+
+                            </div>
+                        </div>
+                        <div class="activies-card">
+                            <div class="activies-card__content">
+                                <div class="activies-card__title" style='background-color: #166534;'>Массаж</div>
+
+
+                            </div>  
+                        </div>
+
+                        
+                     </div>
+                    </div>
+                </section>
+                
+                                <section class="activies activies-otziv" style='background-color: #f4f9f5; padding-bottom: 20px;'>
+                    <div class="activies-content _container" >
+                        <div class="activies-title__content" style='margin: 0px 0px 20px 0px;'>
+                        <div class="activies-title activies-title__otziv">Уже побывали у нас?</div>
+                        <div class="activies-subtitle" style='font-size: 20px;'>По возможности оставьте отзыв 😊</div>
+                    </div>
+                            <div class="activies-cards activies-cards__beauty">
+
+
+
+                                <a href="https://yandex.ru/maps/org/abashevskiy_maral/49652638250/reviews/?ll=43.318748%2C53.906756&tab=reviews&z=14" class='otziv-button' target='_blank'>Оставить отзыв</a>
+
+                        
+                     </div>
+                    </div>
+                </section>
+
+                
+<!--                 <section class="vkontakte _container">-->
+<!--                    <div class="vkontakte-title">Мы в ВКонтакте</div>-->
+<!--                        <div id='vk_post_-32151480_737370'></div>-->
+<!--<script type="text/javascript">-->
+<!--   VK.Widgets.Post('vk_post_-32151480_737370', -32151480, 737370, 'Bc7XG7KIbOqozw_17zS1P3oCLE-6', {width: 300});-->
+<!--</script>-->
+<!--                </section>-->
+
+              <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс Карты</a><a href="https://yandex.ru/maps/?ll=43.251607%2C53.911118&mode=routes&rtext=53.926499%2C43.186867~53.906756%2C43.318748&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzA5MDk5OBI_0KDQvtGB0YHQuNGPLCDQn9C10L3Qt9C10L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KHQv9Cw0YHRgdC6IgoNW78sQhW8tFdC~ymapsbm1%3A%2F%2Forg%3Foid%3D49652638250&utm_medium=mapframe&utm_source=maps&z=13.41" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты</a><iframe src="https://yandex.ru/map-widget/v1/?ll=43.251607%2C53.911118&mode=routes&rtext=53.926499%2C43.186867~53.906756%2C43.318748&rtt=auto&ruri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1MzA5MDk5OBI_0KDQvtGB0YHQuNGPLCDQn9C10L3Qt9C10L3RgdC60LDRjyDQvtCx0LvQsNGB0YLRjCwg0KHQv9Cw0YHRgdC6IgoNW78sQhW8tFdC~ymapsbm1%3A%2F%2Forg%3Foid%3D49652638250&z=13.41" width="100%" height="430" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe></div>
+
+                <section class="footer">
+                    <div class="footer-content _container">
+                        <div class="footer-contacts">
+                            <div class="footer-contacts__title">Наши контакты</div>
+                            <div class="footer-numbers">
+                            <span>Телефон</span>
+                            <a href="tel:89297660042" class="footer-contacts__number">+7 (929) 766-00-42</a>
+                        </div>
+                        <div class="footer-adress">
+                            <span>Адрес</span>
+                            <span class="adress">Абашевский мараловодческий комплекс, Пензенская область, Спасский район, село Липяги</span>
+                            <a href="https://yandex.ru/maps/-/CDvkuAYO" class="adress-link" target="_blank">Посмотреть на карте</a>
+                        </div>
+                        <a href="mailto:amk-spassk@yandex.ru" class="footer-email">amk-spassk@yandex.ru</a>
+                        </div>
+
+                        <!-- <div class="footer-times">
+                            <div class="footer-times__title">График работы</div>
+                            <div class="first-time"><span>Пн-Пт </span> с 9:00 до 18:00</div>
+                            <div class="first-time"><span>Суббота</span> с 10:00 до 17:00</div>
+                            <div class="first-time"><span>Воскресенье</span> - выходной</div>
+
+                        </div> -->
+
+                        <div class="footer-social">
+                            <div class="footer-social__title">Наши соцсети</div>
+                            <div class="logo-social">
+                                <a href="https://vk.com/id865210970" class="social-img"><img src="./img/socseti/vk-svgrepo-com.svg" alt=""></a>
+<a href="https://t.me/+LJao2cvnadgyNzAy" class="social-img"><img src="./img/socseti/telegram-svgrepo-com.svg" alt=""></a>
+                                <a href="https://wa.me/79297660042" class="social-img"><img src="./img/socseti/whatsapp-128-svgrepo-com.svg" alt=""></a>
+                                <a href="tel:89297660042" class="footer-link">Позвонить нам</a> 
+                                <a href="https://wa.me/79297660042" class="footer-link link-phone">Написать в WhatsApp</a>
+
+
+                    </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="down-footer">
+                        <div class="down-footer_content _container">
+                    <div class="down-footer_span">© 2024 год База отдыха «Абашевский Марал»</div>
+                        </div>
+                    </div>
+                </section>
+                  
+
+          
+                  <!-- The Modal/Lightbox -->
+                  <div id="myModal" class="modal" style="z-index: 1001;">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="https://avatars.mds.yandex.net/get-altay/14215987/2a00000191d70a6884dc4ef365b3849b950e/XXXL" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="https://avatars.mds.yandex.net/get-altay/7883089/2a000001901351a36c6823399c30779aa703/XXXL" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="https://avatars.mds.yandex.net/get-altay/13793720/2a00000192dee45edfdca606cf3ca9bfc54d/XXXL" style="width:100%">
+                      </div>
+                  
+                      <div class="mySlides">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="https://avatars.mds.yandex.net/get-altay/12814440/2a000001906ce257cdbdbf819a4ca3eee3ca/XXXL" style="width:100%">
+                      </div>
+                  
+                      <!-- Next/previous controls -->
+                      <a class="prev" onclick="plusSlides(-1)">←</a>
+                      <a class="next" onclick="plusSlides(1)">→</a>
+                  
+                      <!-- Caption text -->
+                      <div class="caption-container">
+                        <p id="caption"></p>
+                      </div>
+                  
+                      <!-- Thumbnail image controls -->
+
+                    </div>
+                  </div>
+            </div>
+        </main>
+    </div>
+    
+<!--        <div class="buttons-media">-->
+<!--    <a href="https://t.me/+LJao2cvnadgyNzAy"><button class="Btn">-->
+<!--      <span class="svgContainer">-->
+<!--        <svg-->
+<!--          viewBox="0 0 496 512"-->
+<!--          height="2.3em"-->
+<!--          xmlns="http://www.w3.org/2000/svg"-->
+<!--          fill="white"-->
+<!--        >-->
+<!--          <path-->
+<!--            d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"-->
+<!--            fill="white"-->
+<!--          ></path>-->
+<!--        </svg>-->
+<!--      </span>-->
+<!--      <span class="BG"></span>-->
+<!--    </button>-->
+<!--</a>-->
+
+
+
+<!--</div>-->
+
+    <div class="btn-up btn-up_hide"></div>
+
+    <!-- <a href="https://wa.me/79374376600" class="wh-right">Написать в WhatsApp</a> -->
+    
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Главная</a>
+        <a href="./rooms.html">Номера</a>
+        <a href="./galery.html">Фото</a>
+        <a href="./services.html">Услуги</a>
+
+        <a href="./entertainment.html">Развлечения</a>
+        <a href="./tovari.html">Товары</a>
+
+        <a href="./restaurant.html">Ресторан</a>
+
+        <div class="sidenav-number__content">
+        <a href="tel:89297660042" class="sidenav-number">+7 (929) 766-00-42</a>
+        <a href="mailto:amk-spassk@yandex.ru" style="font-size: 20px;">amk-spassk@yandex.ru</a>
+        <!-- <span>Наш номер</span> -->
+    </div>
+
+    <div class="sidenav-social__logos">
+        <a href="https://vk.com/id865210970"><img src="./img/socseti/vk-svgrepo-com.svg" alt=""></a> 
+        
+        <a href="https://wa.me/79297660042"><img src="./img/socseti/whatsapp-128-svgrepo-com.svg" alt=""></a>
+        <a href="https://t.me/+LJao2cvnadgyNzAy"><img src="./img/socseti/telegram-svgrepo-com.svg" alt=""></a>
+    </div>
+
+      </div>
+      
+      <!-- Use any element to open the sidenav -->
+      
+      <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+      <!-- <div id="main">
+        ...
+      </div> -->
+      
+
+
+<script>
+    window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 120 || document.documentElement.scrollTop > 120) {
+    document.getElementById("navbar").style.top = "10px";
+  } else {
+    document.getElementById("navbar").style.top = "-70px";
+  }
+}
+</script>
+      
+<script>
+// Open the Modal
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+// Close the Modal
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(97762984, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/97762984" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+
+    <script src="slow-scroll.js"></script>
+    <script src="script.js"></script>
+    <div class="test"></div>
+</body>
+</html>
