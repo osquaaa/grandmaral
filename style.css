@@ -285,7 +285,7 @@ body {
 	}
 	.header__logo {
 		font-size: 30px;
-		padding-top: 90px;
+		padding-top: 80px;
 		font-weight: 800;
 	}
 	.burger-menu {
@@ -304,6 +304,11 @@ body {
 	.number__content {
 		position: absolute;
 		padding: 0px 0px 30px 15px;
+		left: 0;
+	}
+	.number__content-index {
+		position: absolute;
+		padding: 0px 0px 100px 15px;
 		left: 0;
 	}
 	.sidenav {
@@ -512,7 +517,7 @@ body {
 	letter-spacing: 0.2px;
 	font-family: 'Unbounded', sans-serif;
 }
-@media (max-width: 767px) {
+@media (max-width: 782px) {
 	.main-block__title {
 		font-size: 40px;
 	}
@@ -676,6 +681,12 @@ body {
 	line-height: 100%;
 	font-family: 'Unbounded', sans-serif;
 }
+@media (max-width: 1177px) {
+	.activies-title__large {
+		text-align: center;
+		font-size: 40px;
+	}
+}
 @media (max-width: 992px) {
 	.header-block__title {
 		text-align: center;
@@ -690,6 +701,7 @@ body {
 		font-size: 50px;
 	}
 }
+
 @media (max-width: 382px) {
 	.header-block__title {
 		font-size: 30px;
@@ -2274,3 +2286,5 @@ img.hover-shadow {
 /* From Uiverse.io by iZOXVL */
 
 /* From Uiverse.io by iZOXVL */
+@media (max-width: 781px) {
+}
