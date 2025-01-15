@@ -2328,7 +2328,7 @@ img.hover-shadow {
 .hidden {
 	opacity: 0;
 	transform: translateY(50px); /* Сдвиг вниз */
-	transition: all 0.7s ease-in-out; /* Плавный переход */
+	transition: all 0.6s ease-in-out; /* Плавный переход */
 }
 
 /* Появление элемента */
