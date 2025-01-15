@@ -62,3 +62,24 @@ btnUp.addEventListener()
 //   }
 
 //   btnHide.addEventListener();
+// Выбор всех скрытых элементов
+const hiddenElements = document.querySelectorAll('.hidden')
+
+// Функция для обработки появления элементов
+function revealOnScroll() {
+	hiddenElements.forEach(element => {
+		const elementTop = element.getBoundingClientRect().top
+		const viewportHeight = window.innerHeight
+
+		// Если элемент появляется в видимой области
+		if (elementTop < viewportHeight - 100) {
+			element.classList.add('visible')
+		}
+	})
+}
+
+// Привязка функции к событию прокрутки
+window.addEventListener('scroll', revealOnScroll)
+
+// Для появления элементов, которые уже видны на экране при загрузке
+revealOnScroll()

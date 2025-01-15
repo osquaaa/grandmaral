@@ -2325,3 +2325,14 @@ img.hover-shadow {
 	align-items: center;
 	justify-content: center;
 }
+.hidden {
+	opacity: 0;
+	transform: translateY(50px); /* Сдвиг вниз */
+	transition: all 0.6s ease-in-out; /* Плавный переход */
+}
+
+/* Появление элемента */
+.visible {
+	opacity: 1;
+	transform: translateY(0); /* Возврат на место */
+}
