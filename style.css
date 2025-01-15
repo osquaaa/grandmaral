@@ -206,8 +206,8 @@ body {
 	width: 70px;
 	height: 70px;
 	border-radius: 15px;
-	background-color: #000000;
-	border: 1px solid #ffffff;
+	background-color: #242424;
+	border: 1px solid #eef1f4;
 	-webkit-transition: 0.4s;
 	-moz-transition: 0.4s;
 	-o-transition: 0.4s;
@@ -221,7 +221,7 @@ body {
 	position: absolute;
 	width: 50px;
 	height: 3px;
-	background-color: #ffffff;
+	background-color: #eef1f4;
 	-webkit-transition: 0.4s;
 	-moz-transition: 0.4s;
 	-o-transition: 0.4s;
@@ -516,7 +516,7 @@ body {
 }
 
 .main-block__text {
-	color: rgba(250, 250, 250, 0.9);
+	color: #242424;
 	font-weight: 400;
 	font-size: 25px;
 	line-height: 150%;
@@ -1086,10 +1086,11 @@ body {
 } */
 
 .about-content__subtitle1 {
-	color: #ffffff92;
+	color: #242424;
 	font-size: 25px;
 }
 .about-content__subtitle2 {
+	color: #242424;
 	font-size: 30px;
 	font-weight: 600;
 	letter-spacing: 2px;
@@ -1100,7 +1101,7 @@ body {
 }
 
 .numbers-title {
-	color: #fff;
+	color: #242424;
 	font-size: 50px;
 	font-weight: 800;
 	padding: 10px;
@@ -1181,6 +1182,8 @@ body {
 }
 .activies-card__title {
 	display: flex;
+	color: #242424;
+	background-color: #eef1f4;
 	align-items: center;
 	justify-content: center;
 	padding: 13px;
@@ -1289,14 +1292,8 @@ body {
 		display: inline-block;
 		height: 370px;
 		vertical-align: top;
-		-webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0);
-		-moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0);
-		box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0);
 	}
 	.services-card:hover {
-		-webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0);
-		-moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0);
-		box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0);
 	}
 }
 
@@ -1711,9 +1708,9 @@ img.hover-shadow {
 	display: flex;
 	border-radius: 100px;
 	padding: 20px 30px;
-	background: #000000;
-	border: 1px solid #fff;
-	color: #ffffff;
+	background: #242424;
+	border: 1px solid #eef1f4;
+	color: #eef1f4;
 	transition: all 0.3s ease 0s;
 	font-weight: 600;
 	font-size: 18px;
@@ -1726,19 +1723,19 @@ img.hover-shadow {
 	margin-top: 40px;
 }
 .footer-link:hover {
-	background-color: #ffffff;
-	color: #000;
+	background-color: #eef1f4;
+	color: #242424;
 }
 
 .link-phone {
 	margin-top: 10px;
-	color: #000000;
-	background: #ffffff;
+	color: #242424;
+	background: #eef1f4;
 }
 
 .link-phone:hover {
-	background-color: #000000;
-	color: #ffffff;
+	background-color: #242424;
+	color: #eef1f4;
 }
 
 .down-footer {
@@ -1874,7 +1871,7 @@ img.hover-shadow {
 
 .header-photo {
 	background-color: #2b2b2b;
-	background-image: url(./img/header/bg-01.jpg);
+	background-image: url(./img/header/bg_01_photoaidcom_greyscale_negate.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position-y: 55%;
@@ -2079,20 +2076,23 @@ img.hover-shadow {
 
 .card-link__more {
 	display: flex;
-	color: #15803d;
+	color: #242424;
 	font-size: 17px;
 	align-items: center;
 	justify-content: center;
 	text-decoration: none;
 	cursor: pointer;
 	margin-top: 10px;
-	background-color: #dcfce7;
+	background-color: #eef1f4;
 	padding: 10px 20px;
 	border-radius: 10px;
-	border: 1px solid #166534;
+	transition: 0.2s;
 	font-family: 'Unbounded', sans-serif;
 }
-
+.card-link__more:hover {
+	background-color: #242424;
+	color: #eef1f4;
+}
 .activies-subtitle {
 	text-align: center;
 	font-weight: 400;
@@ -2196,7 +2196,7 @@ img.hover-shadow {
 }
 
 .activies-card__title_tovari {
-	background-color: #f1f1f1;
+	background-color: #eef1f4;
 }
 
 .photos-title {
