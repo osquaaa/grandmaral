@@ -101,19 +101,21 @@
     font-size:17px;
     
 }
-.main-block__button_white:hover .main-block__button_white img{
-    filter: invert(0);
+.main-block__button_white img{
+    filter: invert(1);
+    height: 30px;
+    padding-right: 15px;
+    transition: 0.2s;
+}
+    
+.main-block__button_white:hover img {
+    filter: invert(0); /* Инвертируем цвета изображения при наведении */
 }
 .main-block__button_white:hover{
     background-color: #242424;
     color:#eef1f4;
 }
-.main-block__button_white img{
-    filter: invert(1);
-    height: 30px;
-    padding-right: 15px;
-}
-      
+  
       
       
       .main-block__button_orange{
@@ -162,7 +164,7 @@
 
               #navbar {
 
-background: #ffffff;
+                background-color: #242424;
 
   position: fixed; /* Делаем меню фиксированным/прилипающим */
   top: -70px; /* Ставим меню на 50px за пределами видимости */
@@ -175,7 +177,6 @@ background: #ffffff;
   justify-content: center;
 
 border-radius: 20px;
-    border:1px solid #000000;
 }
 .navbar-center{
 display:flex;
@@ -184,7 +185,7 @@ justify-content:center;
 /* Стили ссылок меню */
 #navbar a {
   display: block;
-  color: #000000;
+  color:  #eef1f4;
   text-align: center;
   padding: 10px;
   text-decoration: none;
@@ -192,8 +193,8 @@ justify-content:center;
 }
 
 #navbar a:hover {
-  background-color:#000000;
-  color: rgb(255, 255, 255);
+  background-color:#eef1f4;
+  color: #242424;
     border-radius: 15px;
 }
       .header__menu{
@@ -774,8 +775,13 @@ background: #242424;
                             </div>
                         </div>
                         </div>
-                        
+
                      </div>
+                     <div class="center-more">
+                        <a href="/entertainment.html" class="activies-card mipred more-btn">
+                            <div class="more-text">Еще 2 развлечения ➜</div>
+                        </a>
+                    </div>
                     </div>
                 </section>
 
@@ -828,6 +834,11 @@ background: #242424;
 
                         
                      </div>
+                     <div class="center-more">
+                        <a href="/services.html" class="activies-card mipred more-btn">
+                            <div class="more-text">Еще 4 услуги ➜</div>
+                        </a>
+                    </div>
                     </div>
                 </section>
 
@@ -877,6 +888,11 @@ background: #242424;
 
                         
                      </div>
+                     <div class="center-more">
+                        <a href="/galery.html" class="activies-card mipred more-btn">
+                            <div class="more-text">20 товаров ➜</div>
+                        </a>
+                    </div>
                     </div>
                 </section>
                 
@@ -948,6 +964,11 @@ background: #242424;
                         </div>
 
                         </div>
+                        <div class="center-more">
+                            <a href="/galery.html" class="activies-card mipred more-btn">
+                                <div class="more-text">Еще 25 фото ➜</div>
+                            </a>
+                        </div>
                     </div>
                 </section>
 
@@ -957,7 +978,7 @@ background: #242424;
                         <div class="activies-title activies-title__large">Красота и здоровье</div>
                         <div class="activies-subtitle">У нас есть, что предложить для вашей красоты и здоровья</div>
                     </div>
-                            <div class="activies-cards activies-cards__beauty">
+                            <div class="activies-cards__beauty">
                         <div class="activies-card">
                             <div class="activies-card__content">
                             <div class="activies-card__title" style='background-color:  #eef1f4; color: #242424;'>Сауна</div>
@@ -997,7 +1018,7 @@ background: #242424;
                         <div class="activies-title activies-title__otziv">Уже побывали у нас?</div>
                         <div class="activies-subtitle" style='font-size: 20px;'>По возможности оставьте отзыв 😊</div>
                     </div>
-                            <div class="activies-cards activies-cards__beauty">
+                            <div class="activies-cards__beauty">
 
 
 

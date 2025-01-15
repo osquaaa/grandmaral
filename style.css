@@ -833,6 +833,9 @@ body {
 @media (max-width: 992px) {
 	.services__body {
 		flex-wrap: wrap;
+		background-color: #eef1f474;
+		padding: 10px;
+		border-radius: 30px;
 	}
 }
 /*-------ADVANTAGES------------------------------------------------------------------------------------*/
@@ -1245,10 +1248,14 @@ body {
 		overflow: hidden;
 		overflow-x: scroll;
 		white-space: nowrap;
+		background-color: #eef1f474;
+		padding: 10px;
+		border-radius: 30px;
 	}
 
 	.activies-card {
 		display: inline-block;
+		background-color: #fff;
 		/* width: 250px;
         height: 350px; */
 		vertical-align: top;
@@ -1462,6 +1469,11 @@ body {
 		display: inline-block;
 
 		vertical-align: top;
+	}
+	.galery-photos {
+		background-color: #eef1f474;
+		padding: 10px;
+		border-radius: 30px;
 	}
 }
 
@@ -2285,4 +2297,38 @@ img.hover-shadow {
 
 /* From Uiverse.io by iZOXVL */
 @media (max-width: 781px) {
+}
+.page__services,
+.activies-content {
+	overflow: visible; /* Убедитесь, что содержимое не обрезается */
+}
+.more-btn {
+	display: flex; /* Для выравнивания содержимого */
+	align-items: center; /* Центрирование по вертикали */
+	justify-content: center; /* Центрирование по горизонтали */
+	height: 30px; /* Высота карточки */
+	border-radius: 30px; /* Скругление углов */
+	background-color: #242424; /* Фон кнопки */
+	color: #eef1f4; /* Цвет текста */
+	font-size: 20px; /* Размер текста */
+	font-weight: 600; /* Жирность текста */
+	transition: 0.3s ease; /* Плавный переход для hover */
+	cursor: pointer; /* Указатель при наведении */
+	box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.1); /* Тень */
+	text-decoration: none;
+}
+.more-btn:hover {
+	background-color: #eef1f4; /* Цвет фона при наведении */
+	color: #242424; /* Цвет текста при наведении */
+}
+
+.more-text {
+	text-align: center; /* Центрирование текста */
+	margin: 0; /* Убираем отступы */
+}
+.center-more {
+	padding-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
