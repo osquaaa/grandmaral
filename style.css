@@ -2122,7 +2122,7 @@ img.hover-shadow {
 	text-align: center;
 }
 .pluses-content {
-	color: #000;
+	color: #242424;
 	margin-top: 50px;
 }
 .ul-pluses {
@@ -2185,6 +2185,7 @@ img.hover-shadow {
 }
 .rooms-block__button_white:hover {
 	background-color: #242424;
+	color: #eef1f4;
 }
 
 .activies-child {
