@@ -125,7 +125,7 @@ body {
 }
 .number__header {
 	position: absolute;
-	right: 132px;
+	right: 10px;
 }
 .number__content {
 	position: relative;
@@ -150,7 +150,7 @@ body {
 	text-align: center;
 	font-family: 'Montserrat Alternates', sans-serif;
 	background-color: #eef1f4;
-	border-radius: 5px;
+	border-radius: 8px;
 	padding: 3px 0px;
 	transition: 0.2s;
 	margin-top: 2px;
@@ -162,7 +162,6 @@ body {
 @media (max-width: 1300px) {
 	.number__header {
 		position: absolute;
-		right: 110px;
 	}
 
 	.number__title {
@@ -182,7 +181,6 @@ body {
 @media (max-width: 1180px) {
 	.number__header {
 		position: absolute;
-		right: 60px;
 	}
 }
 
@@ -1271,6 +1269,10 @@ body {
 	background-color: #242424;
 	color: #eef1f4;
 }
+.about {
+	margin-top: 135px;
+}
+
 @media (max-width: 1066px) {
 	/* .services-card:not(:last-child){
             margin-right: 30px;
@@ -1294,6 +1296,9 @@ body {
 		vertical-align: top;
 	}
 	.services-card:hover {
+	}
+	.about {
+		margin-top: 60px;
 	}
 }
 
