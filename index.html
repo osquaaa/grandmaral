@@ -14,6 +14,8 @@
 <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
 <link rel="manifest" href="./favicon_io/site.webmanifest">
+
+
         <link rel="stylesheet" href="style.css">
 
         <link
@@ -57,36 +59,7 @@
 
   }
   
-  .BG {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #24a1de;
-    z-index: -1;
-    border-radius: 10px;
-    pointer-events: none;
-    transition: all 0.3s;
-  }
-  .BG-whatsapp {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #00d757;
-    background: #00d757;
-    background: #00d757;
-    background: #00d757;
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
-    z-index: -1;
-    border-radius: 9px;
-    pointer-events: none;
-    transition: all 0.3s;
-  }
-  .Btn:hover .BG {
-    transform: rotate(35deg);
-    transform-origin: bottom;
-  }
+
   .Btn:hover .BG-whatsapp {
     transform: rotate(35deg);
     transform-origin: bottom;
@@ -107,52 +80,59 @@
     
         transition: 0.5s;
         object-fit: cover;
-        border: 2px solid #3b6844;
+        border: 1px solid #000;
     }
       
       .activies-uslugi{
-    margin-top: 100px;
-    padding-bottom: 80px;
-    background-color: #78b082;
+    margin-top: 40px;
+    padding-bottom: 35px;
+    background-color: #ffffff;
 }
 
       
       .main-block__button_white{
               border-radius: 30px;
-    color: #257030;
-    background:#e1f7e3;
+    color: #242424;
+    background:#eef1f4;
     transition:all 0.3s ease 0s;
     font-weight: 500;
     font-size:17px;
     
 }
-.main-block__button_white:hover{
-    background-color: #60c86f;
-    color:#257030;
+.main-block__button_white:hover .main-block__button_white img{
+    filter: invert(0);
 }
-
+.main-block__button_white:hover{
+    background-color: #242424;
+    color:#eef1f4;
+}
+.main-block__button_white img{
+    filter: invert(1);
+    height: 30px;
+    padding-right: 15px;
+}
       
       
       
       .main-block__button_orange{
     border-radius: 30px;
     padding: 23px 30px;
-    background: #2b8e39;
-    color: #e1f7e3;
+    background:  #242424;
+    color: #eef1f4;
     transition:all 0.3s ease 0s;
     font-weight: 500;
     font-size: 18px;
 }
 .main-block__button_orange:hover{
-    background-color: #22592b;
-    color: #e1f7e3;
+    background-color: #eef1f4;
+	color: #242424;
 }
       
       .like-title{
-    background-color: #f0fdf2;
+    background-color: #eef1f4;
     border-radius: 30px;
     padding: 15px;
-    color: #135422;
+	color: #242424;
     font-size: 20px;
     text-align: center;
 }
@@ -162,23 +142,25 @@
 
         font-size: 20px;
         font-weight: 700;
-        background-color: #1c4b1e;
+        background-color: #eef1f4;
         margin-top: 20px;
-        color: #dbfde1;
+        color: #242424;
         text-decoration: none;
         padding: 20px ;
         border-radius: 20px 10px;
         transition: 0.3s;
+        border: 1px solid #ffffff00;
     }
     .like-sub:hover{
-        background-color: #baf8c6;
-        color: #11972c;
+        background-color: #242424;
+        color: #eef1f4;
+        border: 1px solid #fff;
     }
 
 
               #navbar {
 
-background: #15803d;
+background: #ffffff;
 
   position: fixed; /* Делаем меню фиксированным/прилипающим */
   top: -70px; /* Ставим меню на 50px за пределами видимости */
@@ -191,7 +173,7 @@ background: #15803d;
   justify-content: center;
 
 border-radius: 20px;
-    border:2px solid #065f46;
+    border:1px solid #000000;
 }
 .navbar-center{
 display:flex;
@@ -200,7 +182,7 @@ justify-content:center;
 /* Стили ссылок меню */
 #navbar a {
   display: block;
-  color: #fff;
+  color: #000000;
   text-align: center;
   padding: 10px;
   text-decoration: none;
@@ -208,15 +190,15 @@ justify-content:center;
 }
 
 #navbar a:hover {
-  background-color:#c5f1c1;
-  color: green;
+  background-color:#000000;
+  color: rgb(255, 255, 255);
     border-radius: 15px;
 }
       .header__menu{
     margin: 0px 0px 0px 100px;
 }
 .menu{
-    background-color: #e9ffe04e;
+    background-color: #ffffff38;
     border-radius: 20px;
     padding-left: 40px;
     padding-bottom: 10px;
@@ -245,18 +227,18 @@ justify-content:center;
 }
 
             .span-about{
-        background-color: #94e194;
+        background-color: #ffffff;
         padding: 10px 15px;
         border-radius: 10px 10px 10px 10px;
-        color: #268726;
+        color: #000000;
       }
               .activies-title__otziv{
             margin-top: 20px;
             font-size:40px;
         }
         .otziv-button{
-            background-color: #549360;
-            color: #e6f2e8;
+            background-color:  #eef1f4;
+            color: #242424;
             border-radius: 10px;
             padding: 15px 30px;
             text-decoration: none;
@@ -264,8 +246,8 @@ justify-content:center;
             transition: 0.1s ease-in-out;
         }
         .otziv-button:hover{
-            background-color: #78b082;
-            color:#e6f2e8;
+            background-color: #242424;
+            color:#eef1f4;
         }
       @media(max-width:992px){
 
@@ -288,17 +270,20 @@ justify-content:center;
         }
       .activies-beauty{
     padding-bottom: 80px;
-    background: #cde5d2;
+    background: #ffffff;
 
 }
       .about{
-background:#257030;
+background:#00000000;
+-webkit-box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.1);
+-moz-box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.1);
+box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.1);
       }
       .white-about{
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #dcfce7;
+    background-color: #ffffff;
     width: 25%;
     height: 100%;
     display: flex;
@@ -310,21 +295,21 @@ background:#257030;
     transform: rotate(-90deg);
     font-size: 140px;
     font-weight: 800;
-    color: #356a273b;
+    color: #0000003b;
 }
       ::selection {
-  background: #4db051;
-  color: #deffdf;
+  background: #000000;
+  color: #ffffff;
 }
         .activies-more, .galery-more, .services_button{
-            background-color:#c4eeca;
-            color: #3aad4a;
+            background-color: #eef1f4;
+            color: #242424;
             border-radius: 15px;
             padding: 10px 25px;
-            border: 1px solid #3aad4a;
         }
       .main-block__image img{
-    opacity: 0.6;
+    opacity: 0.8;
+    background-color: #fff;
     background: center center no-repeat;;
 }
     .sidenav .closebtn {
@@ -375,11 +360,7 @@ background:#257030;
     }
 }
 
-.header__logo img{
-    height:100px;
-    filter: invert(1);
 
-}
 
 @media (max-width:479px){
     .main-block__body{
@@ -390,13 +371,15 @@ background:#257030;
     margin-top: 20px;
     font-size: 24px;
     font-weight: 700;
-    color: #FFFEFE;
+    color: #ffffff;
     text-decoration: inherit;
 }
 .header__logo img{
     margin-top: 10px;
     height: 100px;
-    filter: invert(1);
+    height:100px;
+    mix-blend-mode: multiply; /* Здесь происходит магия наложения */
+    background-color: #242424; /* Введите цвет по своему усмотрению */
 }
 }
 .services__container{
@@ -412,7 +395,7 @@ background:#257030;
     vertical-align: top;
     width: 270px;
     height:400px;
-    background: rgb(239, 239, 239);
+    background: rgb(255, 255, 255);
     border-radius: 30px;
     -webkit-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.17);
 -moz-box-shadow: 1px 1px 8px 1px rgba(0, 0, 0, 0.17);
@@ -426,12 +409,8 @@ box-shadow: 1px 24px 24px 1px rgba(0, 0, 0, 0.17);
 
 }
 .services-card img{
-    border: 3px solid #2b8e39;
-
     height: 100%;
     border-radius: 30px;
-
-
 }
 .services-card span{
 
@@ -442,14 +421,13 @@ box-shadow: 1px 24px 24px 1px rgba(0, 0, 0, 0.17);
 .services-card span{
     display: flex;
     top: 0%;
-background: #2b8e39;
+background: #242424;
 
     padding: 15px;
     border-radius: 30px 30px 30px 0px;
     z-index: 100;
     backdrop-filter: blur(2px);
-    color: #e1f7e3;
-
+    color: #eef1f4;
 }
 @media(max-width: 1180px){
     .white-about{
@@ -476,12 +454,7 @@ background: #2b8e39;
         display: none;
     }
 }
-@media (max-width: 1177px) {
-	.activies-title__large {
-		text-align: center;
-		font-size: 50px;
-	}
-}
+
         </style>
     <title>Абашевский Марал | Пантовые ванны, база отдыха</title>
 
@@ -620,13 +593,13 @@ background: #2b8e39;
                             </div>
                             <div class="main-block__buttons">
                                 <a href="tel:89297660042" class="main-block__button main-block__button_orange">Позвонить нам</a>
-                                <a href="https://wa.me/79297660042" class="main-block__button main-block__button_white">Написать в WhatsApp</a>
+                                <a href="https://wa.me/79297660042" class="main-block__button main-block__button_white"><img src="./img/socseti/whatsapp-128-svgrepo-com.svg" alt="">WhatsApp</a>
 
                             </div>
                         </div>
                     </div>
                     <div class="main-block__image">
-                        <img src="./img/header/bg-01.jpg" alt="cover">
+                        <img src="./img/header/bg_01_photoaidcom_greyscale_negate.jpg" alt="cover">
                     </div>
                 </div>
                 <section class="page__services services">
@@ -813,7 +786,7 @@ background: #2b8e39;
                 <section class="activies activies-uslugi">
                     <div class="activies-content _container">
                         <div class="activies-title__content">
-                        <div class="activies-title" style="color: #e6f2e8;">Услуги</div>
+                        <div class="activies-title" style="color: #242424;">Услуги</div>
                         <a href="./services.html" class="activies-more">Смотреть еще</a>
                     </div>
                             <div class="activies-cards">
@@ -863,7 +836,7 @@ background: #2b8e39;
                 </section>
 
 
-           <section class="activies activies-tovari" style="background-color: #fff; padding-bottom: 60px;">
+           <section class="activies activies-tovari" style="background-color: #fff; padding-bottom: 35px;">
                     <div class="activies-content _container">
                         <div class="activies-title__content">
                         <div class="activies-title">Товары</div>
@@ -912,7 +885,7 @@ background: #2b8e39;
                 </section>
                 
                 
-                                <section class="activies activies-child" style='background-color: #e6f2e8; padding-bottom: 100px;'>
+                                <section class="activies activies-child" style='background-color: #ffffff; padding-bottom: 40px;'>
                     <div class="activies-content _container">
                         <div class="activies-title__content">
                         <div class="activies-title activies-title__large" >Охраняемые парковки</div>
@@ -954,10 +927,10 @@ background: #2b8e39;
                 <!--    </div>-->
                 <!--</section>-->
 
-                <section class="galery" style="background-color: #78b082;">
+                <section class="galery" style="background-color: #ffffff;">
                     <div class="galery-content _container">
                         <div class="header-block" style='display: flex; flex-direction: column; margin-bottom: 57px;'>
-                        <div class="galery-title" style=" color: #e6f2e8; ">Фотогалерея</div>
+                        <div class="galery-title" style=" color:  #242424; ">Фотогалерея</div>
                         <a href="./galery.html" class="galery-more ">Смотреть еще</a>
                     </div>
 
@@ -991,27 +964,27 @@ background: #2b8e39;
                             <div class="activies-cards activies-cards__beauty">
                         <div class="activies-card">
                             <div class="activies-card__content">
-                            <div class="activies-card__title" style='background-color: #166534;'>Сауна</div>
+                            <div class="activies-card__title" style='background-color:  #eef1f4; color: #242424;'>Сауна</div>
 
                         </div>
                         </div>
                         <div class="activies-card activies-card__beauty">
                             <div class="activies-card__content">
-                                <div class="activies-card__title " style='background-color:#166534;'>Хаммам</div>
+                                <div class="activies-card__title " style='background-color: #eef1f4;color: #242424;'>Хаммам</div>
 
 
                             </div>
                         </div>
                         <div class="activies-card">
                             <div class="activies-card__content">
-                                <div class="activies-card__title" style='background-color: #166534;'>Спа</div>
+                                <div class="activies-card__title" style='background-color:  #eef1f4;color: #242424;'>Спа</div>
 
 
                             </div>
                         </div>
                         <div class="activies-card">
                             <div class="activies-card__content">
-                                <div class="activies-card__title" style='background-color: #166534;'>Массаж</div>
+                                <div class="activies-card__title" style='background-color:  #eef1f4;color: #242424;'>Массаж</div>
 
 
                             </div>  
@@ -1022,7 +995,7 @@ background: #2b8e39;
                     </div>
                 </section>
                 
-                                <section class="activies activies-otziv" style='background-color: #f4f9f5; padding-bottom: 20px;'>
+                                <section class="activies activies-otziv" style='padding-bottom: 20px;'>
                     <div class="activies-content _container" >
                         <div class="activies-title__content" style='margin: 0px 0px 20px 0px;'>
                         <div class="activies-title activies-title__otziv">Уже побывали у нас?</div>

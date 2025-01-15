@@ -101,7 +101,6 @@ body {
 .header__logo img {
 	margin-top: 10px;
 	height: 100px;
-	filter: invert(1);
 }
 
 @media (max-width: 1120px) {
@@ -145,7 +144,7 @@ body {
 	font-family: 'Jura', sans-serif;
 }
 .number__text {
-	color: #c8c8c8;
+	color: #fff;
 	font-size: 16px;
 	font-style: normal;
 	font-weight: 600;
@@ -172,7 +171,7 @@ body {
 		text-decoration: none;
 	}
 	.number__text {
-		color: #c8c8c8;
+		color: #fff;
 		font-size: 14px;
 		font-style: normal;
 		font-weight: 400;
@@ -208,17 +207,13 @@ body {
 	width: 70px;
 	height: 70px;
 	border-radius: 15px;
-	background-color: #065f46;
-	border: 1px solid #bbf7d0;
+	background-color: #000000;
+	border: 1px solid #ffffff;
 	-webkit-transition: 0.4s;
 	-moz-transition: 0.4s;
 	-o-transition: 0.4s;
 	transition: 0.2s;
 	cursor: pointer;
-}
-
-.burger-menu_button:hover {
-	background-color: #047857;
 }
 
 .burger-menu_lines::before,
@@ -227,7 +222,7 @@ body {
 	position: absolute;
 	width: 50px;
 	height: 3px;
-	background-color: #bbf7d0;
+	background-color: #ffffff;
 	-webkit-transition: 0.4s;
 	-moz-transition: 0.4s;
 	-o-transition: 0.4s;
@@ -296,7 +291,7 @@ body {
 	}
 	.number__text {
 		font-size: 18px;
-		color: #ddd;
+		color: #fff;
 	}
 	.number__title {
 		font-size: 22px;
@@ -329,7 +324,7 @@ body {
 	}
 	.number__text {
 		font-size: 18px;
-		color: #ddd;
+		color: #fff;
 	}
 	.number__title {
 		font-size: 22px;
@@ -443,13 +438,13 @@ body {
 	text-decoration: none;
 
 	cursor: pointer;
-
+	transition: 0.2s;
 	cursor: pointer;
 	font-family: 'Unbounded', sans-serif;
 }
 .services_button:hover {
-	text-decoration: underline;
-	text-decoration-style: solid;
+	color: #eef1f4;
+	background-color: #242424;
 }
 .header-block__title {
 	font-size: 40px;
@@ -510,7 +505,7 @@ body {
 }
 
 .main-block__title {
-	color: #fafafa;
+	color: #242424;
 	font-size: 69px;
 	line-height: 100%;
 	font-weight: 600;
@@ -656,7 +651,7 @@ body {
 	}
 	.number__text {
 		font-size: 16px;
-		color: #ddd;
+		color: #ffffff;
 	}
 	.number__title {
 		font-size: 16px;
@@ -673,7 +668,7 @@ body {
 /*-------------------------------------------------------------------------------------------*/
 
 .header-block__title {
-	color: #2b2b2b;
+	color: #242424;
 	letter-spacing: 1px;
 	padding: 0px 0px 57px 0px;
 	font-size: 76px;
@@ -828,7 +823,7 @@ body {
 	}
 }
 .item-service__title {
-	color: #000;
+	color: #242424;
 	font-weight: 700;
 	font-size: 24px;
 	letter-spacing: 0.1px;
@@ -958,7 +953,7 @@ body {
 }
 .video__card-title {
 	font-size: 30px;
-	color: #2b2b2b;
+	color: #242424;
 	font-weight: 500;
 }
 .video__card-info {
@@ -1109,7 +1104,7 @@ body {
 }
 
 .numbers-title {
-	color: #c1ffb1;
+	color: #fff;
 	font-size: 50px;
 	font-weight: 800;
 	padding: 10px;
@@ -1129,7 +1124,7 @@ body {
 
 .activies-title {
 	margin-top: 60px;
-	color: #2b2b2b;
+	color: #242424;
 	letter-spacing: 1px;
 	padding: 0px 0px 20px 0px;
 	font-size: 76px;
@@ -1167,11 +1162,13 @@ body {
 	vertical-align: top;
 	width: 270px;
 	height: 100%;
-	background: rgb(239, 239, 239);
+
 	border-radius: 30px;
 
 	transition: 0.5s;
-	border: 1px solid #047857;
+	-webkit-box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 4px 4px 32px 0px rgba(0, 0, 0, 0.1);
 }
 .activies-card:not(:last-child) {
 	margin-right: 20px;
@@ -1190,8 +1187,6 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #bbf7d0;
-	background-color: #15803d;
 	padding: 13px;
 	border-radius: 20px;
 	width: 100%;
@@ -1200,7 +1195,6 @@ body {
 	margin-right: 10px;
 	font-weight: 600;
 	font-size: 17px;
-	border: 2px solid #065f46;
 }
 .activies-card__img {
 	width: 100%;
@@ -1218,13 +1212,14 @@ body {
 	color: rgb(0, 213, 0);
 	font-size: 17px;
 	text-decoration: none;
-
+	transition: 0.2s;
 	cursor: pointer;
 	font-family: 'Unbounded', sans-serif;
 }
 .activies-more:hover {
 	text-decoration-style: solid;
-	text-decoration: underline;
+	color: #eef1f4;
+	background-color: #242424;
 }
 
 /* .activies-content{
@@ -1262,11 +1257,30 @@ body {
 		vertical-align: top;
 	}
 }
-
+.services-card a {
+	text-decoration: none;
+	position: absolute;
+	z-index: 100;
+	bottom: -20%;
+	padding: 20px;
+	background-color: #eef1f4;
+	color: #242424;
+	border-radius: 15px;
+	transition: 0.2s;
+}
+.services-card a:hover {
+	background-color: #242424;
+	color: #eef1f4;
+}
 @media (max-width: 1066px) {
 	/* .services-card:not(:last-child){
             margin-right: 30px;
         } */
+	.services-card a {
+		bottom: 0;
+		background-color: #ffffff;
+		color: #000;
+	}
 	.services-cards {
 		width: 100%;
 		height: 100%;
@@ -1316,7 +1330,7 @@ body {
 	padding-top: 15px;
 	text-decoration: none;
 	font-size: 30px;
-	color: #dcfce7;
+	color: #000000;
 	display: block;
 	transition: 0.3s;
 	font-family: 'Unbounded', sans-serif;
@@ -1324,7 +1338,7 @@ body {
 .sidenav span {
 	text-decoration: none;
 	font-size: 25px;
-	color: #e0e0e0;
+	color: #ffffff;
 	display: block;
 	transition: 0.3s;
 	text-align: center;
@@ -1345,7 +1359,7 @@ body {
 }
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-	color: #f1f1f1;
+	margin-right: 8px;
 }
 
 /* Position and style the close button (top right corner) */
@@ -1368,7 +1382,7 @@ body {
 
 .galery {
 	background-color: #fff;
-	padding-bottom: 130px;
+	padding-bottom: 40px;
 }
 
 .galery-title {
@@ -1424,13 +1438,14 @@ body {
 	color: rgb(0, 213, 0);
 	font-size: 17px;
 	text-decoration: none;
-
+	transition: 0.2s;
 	cursor: pointer;
 	font-family: 'Unbounded', sans-serif;
 }
 .galery-more:hover {
 	text-decoration-style: solid;
-	text-decoration: underline;
+	color: #eef1f4;
+	background-color: #242424;
 }
 .galery-title__content {
 	margin-bottom: 57px;
@@ -1592,7 +1607,7 @@ img.hover-shadow {
 
 .footer {
 	padding-top: 20px;
-	background-color: #333;
+	background-color: #242424;
 	padding-bottom: 20px;
 }
 .footer-content {
@@ -1601,7 +1616,7 @@ img.hover-shadow {
 	max-width: 100%;
 }
 .footer-contacts {
-	border-right: 1px solid #c1c1c1;
+	border-right: 1px solid #ffffff;
 }
 .footer-contacts__title {
 	font-weight: 600;
@@ -1620,7 +1635,7 @@ img.hover-shadow {
 	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
-	color: rgb(148, 148, 148);
+	color: rgb(184, 184, 184);
 }
 
 .footer-adress {
@@ -1628,7 +1643,7 @@ img.hover-shadow {
 	padding-top: 20px;
 	display: flex;
 	flex-direction: column;
-	color: rgb(148, 148, 148);
+	color: rgb(184, 184, 184);
 }
 .adress {
 	padding-top: 10px;
@@ -1663,13 +1678,13 @@ img.hover-shadow {
 .footer-times {
 	margin-left: 30px;
 	font-size: 18px;
-	border-right: 1px solid #c1c1c1;
+	border-right: 1px solid #ffffff;
 	padding-right: 25px;
 }
 .footer-times span {
 	font-weight: 600;
 	font-size: 20px;
-	color: #c1c1c1;
+	color: #ffffff;
 }
 .first-time:not(:last-child) {
 	padding-bottom: 10px;
@@ -1700,8 +1715,9 @@ img.hover-shadow {
 	display: flex;
 	border-radius: 100px;
 	padding: 20px 30px;
-	background: #16a34a;
-	color: #dcfce7;
+	background: #000000;
+	border: 1px solid #fff;
+	color: #ffffff;
 	transition: all 0.3s ease 0s;
 	font-weight: 600;
 	font-size: 18px;
@@ -1714,18 +1730,19 @@ img.hover-shadow {
 	margin-top: 40px;
 }
 .footer-link:hover {
-	background-color: #15803d;
+	background-color: #ffffff;
+	color: #000;
 }
 
 .link-phone {
 	margin-top: 10px;
-	color: #16a34a;
-	background: #dcfce7;
+	color: #000000;
+	background: #ffffff;
 }
 
 .link-phone:hover {
-	background-color: #fff;
-	color: #15803d;
+	background-color: #000000;
+	color: #ffffff;
 }
 
 .down-footer {
@@ -1733,7 +1750,7 @@ img.hover-shadow {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-top: 1px solid #c1c1c12b;
+	border-top: 1px solid #ffffff;
 	margin-top: 20px;
 }
 .down-footer_span {
@@ -1742,7 +1759,7 @@ img.hover-shadow {
 	align-items: center;
 	justify-content: center;
 	padding-top: 13px;
-	color: #939393;
+	color: #c5c5c5;
 }
 
 @media (max-width: 976px) {
@@ -1786,12 +1803,12 @@ img.hover-shadow {
 	padding-bottom: 60px;
 }
 .vkontakte-title {
-	color: #2b2b2b;
+	color: #242424;
 }
 
 .vkontakte-title {
 	margin-top: 60px;
-	color: #2b2b2b;
+	color: #242424;
 	letter-spacing: 1px;
 	padding: 0px 0px 20px 0px;
 	font-size: 60px;
@@ -1891,7 +1908,7 @@ img.hover-shadow {
 }
 
 .photos-title {
-	color: #2b2b2b;
+	color: #242424;
 	font-size: 60px;
 	font-weight: 700;
 	font-family: 'Unbounded', sans-serif;
@@ -1952,9 +1969,6 @@ img.hover-shadow {
 
 .header__logo {
 	margin-top: 20px;
-	font-size: 24px;
-	font-weight: 700;
-	color: #fffefe;
 	text-decoration: inherit;
 }
 .logo-mini img {
@@ -2086,7 +2100,8 @@ img.hover-shadow {
 
 .activies-subtitle {
 	text-align: center;
-	color: #737373b9;
+	font-weight: 400;
+	color: #6a6a6a;
 	font-family: 'Unbounded', sans-serif;
 }
 
@@ -2095,7 +2110,7 @@ img.hover-shadow {
 }
 
 .pluses-title {
-	color: #2b2b2b;
+	color: #242424;
 	font-size: 40px;
 	text-align: center;
 }
@@ -2121,19 +2136,8 @@ img.hover-shadow {
 }
 
 .services-more_sub {
-	color: #fff;
 	border-radius: 30px;
 	font-family: 'Unbounded', sans-serif;
-}
-
-.services-card a {
-	position: absolute;
-	z-index: 100;
-	bottom: 0%;
-	padding: 20px;
-	background-color: #82ac74;
-	text-decoration: underline;
-	text-decoration-style: dashed;
 }
 
 .rooms-block__buttons {
@@ -2190,8 +2194,6 @@ img.hover-shadow {
 }
 
 .activies-tovari {
-	background-color: #e8e8e8cf;
-	padding-bottom: 80px;
 }
 
 .activies-card-tovari {
@@ -2239,7 +2241,6 @@ img.hover-shadow {
 	vertical-align: top;
 	width: 270px;
 	height: 100%;
-	background: #15803d;
 	border-radius: 30px;
 
 	transition: 0.5s;
@@ -2248,8 +2249,8 @@ img.hover-shadow {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	color: #d1fae5;
-	background-color: #14532d;
+	color: #242424;
+	background-color: #eef1f4;
 	padding: 13px;
 	border-radius: 20px;
 	width: 100%;
@@ -2258,17 +2259,14 @@ img.hover-shadow {
 	margin-right: 10px;
 	font-weight: 600;
 	font-size: 17px;
-	border: 1px solid #86efac;
 }
 .mipred-img img {
-	border: 2px solid #86efac;
 }
 .swiper-tovari {
 	border: 2.5px solid #14532d;
 	border-radius: 37px;
 }
 .tovari-main img {
-	border: 2px solid #bbf7d0;
 }
 .span-about {
 	font-family: 'Jura', sans-serif;
