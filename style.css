@@ -1548,7 +1548,7 @@ body {
 	position: absolute;
 	top: 140%;
 	width: auto;
-	color: #fff;
+	color: #242424;
 	padding: 20px 15px 20px 10px;
 	margin-top: -50px;
 	font-weight: 500;
@@ -1556,11 +1556,7 @@ body {
 	transition: 0.3s ease;
 	user-select: none;
 	-webkit-user-select: none;
-	background: linear-gradient(
-		90deg,
-		rgba(11, 223, 0, 0.894) 0%,
-		rgb(76, 198, 0) 58%
-	);
+	background-color: #eef1f4;
 	border-radius: 0% 50% 50% 0%;
 }
 
@@ -1575,19 +1571,18 @@ body {
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: #eef1f4b3;
 }
 
 /* Number text (1/3 etc) */
 .numbertext {
-	color: #f2f2f2;
+	color: #242424;
 	font-size: 17px;
 	padding: 8px 15px;
 	position: absolute;
 	top: 0;
 	font-weight: 500;
-	background: linear-gradient(90deg, rgb(11, 223, 0) 0%, rgb(76, 198, 0) 58%);
-
+	background-color: #eef1f4;
 	border-radius: 0px 0px 30px 0px;
 }
 
@@ -1841,7 +1836,8 @@ img.hover-shadow {
 	/* фиксированное позиционирование */
 	position: fixed;
 	/* цвет фона */
-	background: linear-gradient(90deg, rgb(11, 223, 0) 0%, rgb(76, 198, 0) 58%);
+	background-color: #242424;
+	border: 1px solid #eef1f4;
 	/* расстояние от правого края окна браузера */
 	left: 20px;
 	/* расстояние от нижнего края окна браузера */
@@ -1887,7 +1883,7 @@ img.hover-shadow {
 /* Страница с фотографиями */
 
 .header-photo {
-	background-color: #2b2b2b;
+	background-color: #242424;
 	background-image: url(./img/header/bg_01_photoaidcom_greyscale_negate.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -1951,7 +1947,6 @@ img.hover-shadow {
 	.back-link {
 		margin-top: 20px;
 		text-align: center;
-		color: #595959;
 	}
 	.photos-title {
 		text-align: center;
@@ -2075,10 +2070,10 @@ img.hover-shadow {
 }
 
 .card-price {
-	color: #bbf7d0;
+	color: #eef1f4;
 	font-weight: 600;
 	margin-top: 10px;
-	background-color: #15803d;
+	background-color: #242424;
 	padding: 12px 20px;
 	border-radius: 10px 20px;
 	text-align: center;
@@ -2163,30 +2158,33 @@ img.hover-shadow {
 }
 
 .rooms-block__button_orange {
-	background-color: #15803d;
-	color: #dcfce7;
+	background-color: #eef1f4;
+	color: #242424;
 	padding: 15px 20px;
 	border-radius: 30px;
 	text-decoration: none;
 	margin-top: 10px;
 	font-family: 'Unbounded', sans-serif;
+	transition: 0.2s;
 }
 .rooms-block__button_orange:hover {
-	background-color: #166534;
-	color: #fff;
+	background-color: #242424;
+	color: #eef1f4;
 }
 .rooms-block__button_white {
 	margin-top: 10px;
-	color: #166534;
-	background-color: #86efac;
+	color: #242424;
+	background-color: #86efad00;
 	padding: 15px 20px;
 	border-radius: 30px;
 	text-decoration: none;
 	font-family: 'Unbounded', sans-serif;
 	text-align: center;
+	transition: 0.2s;
+	border: 1px solid #242424;
 }
 .rooms-block__button_white:hover {
-	background-color: #bbf7d0;
+	background-color: #242424;
 }
 
 .activies-child {
@@ -2244,7 +2242,7 @@ img.hover-shadow {
 	border-radius: 5px;
 }
 .back-link a:hover {
-	outline: 1px solid #277447; /* Ширина, вид и цвет рамки */
+	outline: 1px solid #242424; /* Ширина, вид и цвет рамки */
 	outline-offset: 0px; /* Выводим рамку внутри элемента */
 }
 
@@ -2288,11 +2286,6 @@ img.hover-shadow {
 	font-family: 'Unbounded', sans-serif;
 }
 
-@media (max-width: 365px) {
-	.number__text {
-		display: none;
-	}
-}
 /* From Uiverse.io by iZOXVL */
 
 /* From Uiverse.io by iZOXVL */

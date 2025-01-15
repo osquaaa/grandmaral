@@ -450,7 +450,11 @@ background: #242424;
         display: none;
     }
 }
-
+@media (max-width: 365px) {
+	.number__text {
+		display: none;
+	}
+}
 
         </style>
     <title>Абашевский Марал | Пантовые ванны, база отдыха</title>
@@ -881,7 +885,7 @@ background: #242424;
                                 <div class="activies-card__img tovari-main">
                                     <img src="https://avatars.mds.yandex.net/get-altay/13754922/2a00000193102a7721f6147bc9add043ab1f/XXXL" alt="">
                                 </div>
-<a href="../tovari.html" class="card-link__more">Подробнее</a>
+<a href="../tovari.html" class="card-link__more">Подробнее</a>ы
 
                             </div>  
                         </div>
@@ -889,7 +893,7 @@ background: #242424;
                         
                      </div>
                      <div class="center-more">
-                        <a href="/galery.html" class="activies-card mipred more-btn">
+                        <a href="/tovari.html" class="activies-card mipred more-btn">
                             <div class="more-text">20 товаров ➜</div>
                         </a>
                     </div>
@@ -1092,38 +1096,29 @@ background: #242424;
                   <div id="myModal" class="modal" style="z-index: 1001;">
                     <span class="close cursor" onclick="closeModal()">&times;</span>
                     <div class="modal-content">
-                  
-                      <div class="mySlides">
+                      <div class="mySlides fade">
                         <div class="numbertext">1 / 4</div>
                         <img src="https://avatars.mds.yandex.net/get-altay/14215987/2a00000191d70a6884dc4ef365b3849b950e/XXXL" style="width:100%">
                       </div>
                   
-                      <div class="mySlides">
+                      <div class="mySlides fade">
                         <div class="numbertext">2 / 4</div>
                         <img src="https://avatars.mds.yandex.net/get-altay/7883089/2a000001901351a36c6823399c30779aa703/XXXL" style="width:100%">
                       </div>
                   
-                      <div class="mySlides">
+                      <div class="mySlides fade">
                         <div class="numbertext">3 / 4</div>
                         <img src="https://avatars.mds.yandex.net/get-altay/13793720/2a00000192dee45edfdca606cf3ca9bfc54d/XXXL" style="width:100%">
                       </div>
                   
-                      <div class="mySlides">
+                      <div class="mySlides fade">
                         <div class="numbertext">4 / 4</div>
                         <img src="https://avatars.mds.yandex.net/get-altay/12814440/2a000001906ce257cdbdbf819a4ca3eee3ca/XXXL" style="width:100%">
                       </div>
                   
-                      <!-- Next/previous controls -->
-                      <a class="prev" onclick="plusSlides(-1)">←</a>
-                      <a class="next" onclick="plusSlides(1)">→</a>
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
                   
-                      <!-- Caption text -->
-                      <div class="caption-container">
-                        <p id="caption"></p>
-                      </div>
-                  
-                      <!-- Thumbnail image controls -->
-
                     </div>
                   </div>
             </div>
