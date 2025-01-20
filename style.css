@@ -2375,3 +2375,11 @@ img.hover-shadow {
 	background: #242424;
 	transition: width 0.3s;
 }
+.lazy {
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.lazy.loaded {
+	opacity: 1;
+}
