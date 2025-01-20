@@ -109,3 +109,31 @@ document.addEventListener('DOMContentLoaded', () => {
 		}, 300)
 	})
 })
+
+const NOTIFICATION_KEY = 'promoNotificationTimestamp'
+const NOTIFICATION_COOLDOWN = 5 * 60 * 1000 // 5 минут в миллисекундах
+
+function showNotification() {
+	const promo = document.getElementById('promo')
+	const isMobile = window.innerWidth <= 768
+
+	promo.classList.add(isMobile ? 'mobile' : 'desktop')
+	promo.classList.remove('hidden')
+}
+
+function closeNotification() {
+	const promo = document.getElementById('promo')
+	promo.classList.add('hidden')
+
+	const now = Date.now()
+	localStorage.setItem(NOTIFICATION_KEY, now)
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+	const lastShown = localStorage.getItem(NOTIFICATION_KEY)
+	const now = Date.now()
+
+	if (!lastShown || now - lastShown > NOTIFICATION_COOLDOWN) {
+		showNotification()
+	}
+})
