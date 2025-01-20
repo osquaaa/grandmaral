@@ -83,3 +83,25 @@ window.addEventListener('scroll', revealOnScroll)
 
 // Для появления элементов, которые уже видны на экране при загрузке
 revealOnScroll()
+document.addEventListener('DOMContentLoaded', () => {
+	const loader = document.querySelector('#loading-screen')
+	const progressBar = document.querySelector('.loader-progress')
+
+	let progress = 0
+	const interval = setInterval(() => {
+		progress += 10
+		progressBar.style.width = `${progress}%`
+
+		if (progress >= 100) {
+			clearInterval(interval)
+		}
+	}, 100) // Увеличение каждые 100ms
+
+	// Убрать экран после полной загрузки страницы
+	window.addEventListener('load', () => {
+		loader.style.opacity = 0
+		setTimeout(() => {
+			loader.style.display = 'none'
+		}, 500) // Удаление через 500ms после исчезновения
+	})
+})
