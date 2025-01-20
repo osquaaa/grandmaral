@@ -83,25 +83,38 @@ window.addEventListener('scroll', revealOnScroll)
 
 // Для появления элементов, которые уже видны на экране при загрузке
 revealOnScroll()
+
 document.addEventListener('DOMContentLoaded', () => {
 	const loader = document.querySelector('#loading-screen')
 	const progressBar = document.querySelector('.loader-progress')
-
 	let progress = 0
-	const interval = setInterval(() => {
-		progress += 10
-		progressBar.style.width = `${progress}%`
 
-		if (progress >= 100) {
-			clearInterval(interval)
+	// Обновление прогресса (в процентах)
+	function updateProgress(value) {
+		progressBar.style.width = `${value}%`
+	}
+
+	// Симуляция прогресса до загрузки
+	const simulateProgress = setInterval(() => {
+		if (progress < 90) {
+			// Ограничиваем симуляцию до 90%
+			progress += 10
+			updateProgress(progress)
 		}
-	}, 100) // Увеличение каждые 100ms
+	}, 200) // Каждые 200ms
 
-	// Убрать экран после полной загрузки страницы
+	// Дождаться полной загрузки страницы
 	window.addEventListener('load', () => {
-		loader.style.opacity = 0
+		clearInterval(simulateProgress) // Останавливаем симуляцию
+		progress = 100 // Устанавливаем прогресс на 100%
+		updateProgress(progress)
+
+		// Убрать загрузочный экран после завершения
 		setTimeout(() => {
-			loader.style.display = 'none'
-		}, 500) // Удаление через 500ms после исчезновения
+			loader.style.opacity = 0
+			setTimeout(() => {
+				loader.style.display = 'none'
+			}, 500) // Задержка для плавного исчезновения
+		}, 300) // Небольшая задержка, чтобы показать полное заполнение
 	})
 })
